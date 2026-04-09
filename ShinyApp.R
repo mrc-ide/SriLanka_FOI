@@ -26,9 +26,9 @@ ui <- fluidPage(
                 accept = c("text/csv", "text/comma-separated-values,text/plain", ".csv")),
       
       # Radio buttons for selecting the separator used in the CSV file
-      radioButtons("sep", "Separator",
-                   choices = c(Comma = ",", Semicolon = ";", Tab = "\t"),
-                   selected = ","),
+      # radioButtons("sep", "Separator",
+      #              choices = c(Comma = ",", Semicolon = ";", Tab = "\t"),
+      #              selected = ","),
       
       # Dynamic input for selecting locations (Districts)
       # uiOutput("location_select"),
@@ -36,6 +36,9 @@ ui <- fluidPage(
       
       # Dynamic input for selecting years
       uiOutput("year_select"),
+      
+      # Dynamic input for reference age groups
+      uiOutput("reference_agegroup_select"),
       
       # Model selection
       selectInput("model", "Select Model", choices = c("time_varying.stan", "time_constant.stan")),
@@ -53,6 +56,7 @@ ui <- fluidPage(
     ),
     
     mainPanel(
+      uiOutput("rhatWarning"),  # <- Barra di avviso condizionale
       tabsetPanel(
         # tabPanel("Model Feedback", verbatimTextOutput("modelStatus")),  # New feedback tab
         tabPanel("Fit Plot", plotOutput("fitPlot")),
@@ -69,11 +73,11 @@ ui <- fluidPage(
 # Define Server
 server <- function(input, output, session) {
   
-
+  
   # Helper function to read CSV file
   read_file <- function(file) {
     if (is.null(file)) return(NULL)
-    read.csv(file$datapath, sep = input$sep, stringsAsFactors = FALSE)
+    read.csv(file$datapath, sep = ",", stringsAsFactors = FALSE)
   }
   
   # Reactive expressions for data
@@ -117,6 +121,7 @@ server <- function(input, output, session) {
     selectInput("province", "Select Province", choices = setNames(provinces, province_choices), selected = provinces[1], multiple = TRUE)
   })
   
+  
   # Dynamically update the year input based on uploaded Dengue Cases file
   output$year_select <- renderUI({
     req(dengue_cases_data())
@@ -131,6 +136,20 @@ server <- function(input, output, session) {
                 step = 1,                           # each step is 1 years
                 sep = "")                           # remove comma 
   })
+  
+  output$reference_agegroup_select <- renderUI({
+    req(dengue_cases_data())
+    
+    agegroups <- unique(dengue_cases_data()$AgeGroup)  # order years
+    agegroups <- agegroups[-c(1, length(agegroups))] #extreme excluded
+    # sliderfor time window selection
+    
+    selectInput("Ref_Agegroup", "Select Reference Age-group", 
+                choices = agegroups, 
+                selected = agegroups[4], 
+                multiple = F)
+  })
+  
   
   # Reactive expressions for filtered data
   filtered_cases <- reactive({
@@ -150,31 +169,37 @@ server <- function(input, output, session) {
     req(filtered_cases())
     req(filtered_population())
     
-
+    
+  
+    
     # plot_ready(FALSE)  # Hide plots
     
     # Model Feedback Output: Reset the status output
     output$modelStatus <- renderText({"Model is starting..."})
     
     withProgress(message = 'Fitting Model', value = 0, {
-    # withProgress(message = 'Fitting Model', value = 0, {
+      # withProgress(message = 'Fitting Model', value = 0, {
       n_steps <- 5
-    #   
+      #   
       # Increment progress for data preparation
       incProgress(1/n_steps, detail = "Preparing data...")
       
       # Data preparation steps (as shown in your original code)
       df_long_cases <- filtered_cases() %>%
-        group_by(District, Year)%>%
-        pivot_longer(cols = -c(X, District, Year, Province), names_to = "AgeGroup", values_to = "Cases")
+        select(-c("X","X.1"))
+      df_long_pop <- filtered_population()  %>%
+        select(-c("X","X.1"))
       
-      df_long_pop <- filtered_population() %>%
-        group_by(District, Year)%>%
-        pivot_longer(cols = -c(X, District, Year, Province), names_to = "AgeGroup", values_to = "Population")
+      age_group <- unique(df_long_cases$AgeGroup)
+      age_min <-  unique(df_long_cases$min_age) +1 
+      age_max <- unique(df_long_cases$max_age) +1
       
       df_long <- merge(df_long_cases, df_long_pop, by = c("District", "Year", "Province", "AgeGroup"))
       df_long$Cases <- as.numeric(df_long$Cases)
       df_long$Population <- as.numeric(df_long$Population)
+      
+      province_list <- unique(df_long$Province)
+      
       df_long <- df_long %>%
         filter(!is.na(Cases), !is.na(Population), Population > 0)
       
@@ -184,23 +209,23 @@ server <- function(input, output, session) {
       
       # Prepare cases matrix for the model
       case_wide <- df_long %>%
-        select(-X.x, -Province, -X.y, - Population, -Cases) %>%  # Exclude these columns
+        select( -"min_age.x", -"max_age.x", -"min_age.y", - "max_age.y" ,  -"Province", - "Population", -"Cases") %>%  # Exclude these columns
         pivot_wider(names_from = "AgeGroup", values_from = "incidence")
       
       df_long <- melt(case_wide, id.vars = c("District", "Year"))
       cases <- acast(df_long, District ~ Year ~ variable, value.var = "value")
       
       #associate province number to each district (dinamic dictionary based on selected provinces)
-      selected_province_dict <- setNames(seq_along(input$province), input$province)
-
+      selected_province_dict <-setNames(seq_along(unique(df_long_cases$Province)), unique(df_long_cases$Province))
+      
       # Extract district order from cases dataframe
       districts_order <- dimnames(cases)[[1]] 
-
+      
       output$modelStatus <- renderText({"prob2"})
       
       # Create province vector assocaited to districts
       province_numbers <- sapply(districts_order, function(d) {
-        province <- filtered_cases()$Province[filtered_cases()$District == d][1]
+        province <- df_long_cases$Province[df_long_cases$District == d][1]
         if (province %in% input$province) {
           selected_province_dict[[province]]  
         } else {
@@ -208,7 +233,7 @@ server <- function(input, output, session) {
         }
       })
       
-  
+      
       # Increment progress after data preparation
       # incProgress(1/n_steps, detail = "Data prepared, running Stan model...")
       
@@ -217,13 +242,13 @@ server <- function(input, output, session) {
       nT <- length(unique(df_long$Year))
       nL <- length(unique(df_long$District))
       
-      age_min <- c(1, 6, 11, 16, 21, 26, 51, 66)
-      age_max <- c(5, 10, 15, 20, 25, 50, 65, 96)
       age_band_width <- age_max - age_min + 1
+      ref <- grep(input$Ref_Agegroup, age_group)
       
       stan_data <- list(
         nA = nA, nL = nL, nT = nT, 
         age = seq(0, 99, 1), 
+        X = as.numeric(ref),
         # N = as.numeric(input$N),
         nP = nP,
         N = 10000,
@@ -233,7 +258,7 @@ server <- function(input, output, session) {
         sum_cases = apply(cases, c(1, 2), sum),
         age_band = age_band_width
       )
-
+      
       
       output$modelStatus <- renderText({"Data list ready, model is starting..."})
       
@@ -251,7 +276,7 @@ server <- function(input, output, session) {
       # Process the results (as in your original code)
       chains <- rstan::extract(fit)
       
-
+      
       #extrat historical lambda estimates
       lam_H <- as.data.frame(matrix(NA, nL, 3))
       chi1 <- as.data.frame(matrix(NA, nL, 3))
@@ -284,46 +309,46 @@ server <- function(input, output, session) {
         rho[l,1:3] <- quantile(chains$rho[,l],c(0.5,0.025,0.975))
         rho <- as.data.frame(rho)
         colnames(rho)[1:3] <- c("med", "ciL", "ciU")
-        rho$loc[l] <- unique(input$province)[l]
+        rho$loc[l] <- province_list[l]
         rho$year <- "rho"
       }
       
-
-        gamma <- as.data.frame(matrix(NA, nP, 3))
-        for (l in 1:nP) {
-          gamma[l, 1:3] <- quantile(chains$gamma[, l], c(0.5, 0.025, 0.975))
-          gamma <- as.data.frame(gamma)
-          colnames(gamma)[1:3] <- c("med", "ciL", "ciU")
-          gamma$loc[l] <- unique(input$province)[l]
-          gamma$year <- "gamma"
+      
+      gamma <- as.data.frame(matrix(NA, nP, 3))
+      for (l in 1:nP) {
+        gamma[l, 1:3] <- quantile(chains$gamma[, l], c(0.5, 0.025, 0.975))
+        gamma <- as.data.frame(gamma)
+        colnames(gamma)[1:3] <- c("med", "ciL", "ciU")
+        gamma$loc[l] <- province_list[l]
+        gamma$year <- "gamma"
+      }
+      
+      pars <- rbind(rho, gamma, lam_H, chi1, chi2)
+      
+      # Select model-specific parameters
+      if (input$model == "time_varying.stan") {
+        lam <- array(NA, dim = c(nT, 5, nL))
+        
+        for (l in 1:nL) for (t in 1:nT) {
+          lam[t, 4, l] <- districts_order[l]
+          lam[t, 5, l] <- unique(df_long$Year)[t]
+          lam[t, 1:3, l] <- quantile(chains$lam_t[, l, t], c(0.5, 0.025, 0.975))
         }
         
-        pars <- rbind(rho, gamma, lam_H, chi1, chi2)
+        lambda <- do.call(rbind, lapply(1:nL, function(l) lam[,, l]))
+        lambda <- as.data.frame(lambda)
+        colnames(lambda) <- c("med", "ciL", "ciU", "loc", "year")
+        lambda$year <- rep(seq(input$year[1], input$year[2], 1), nL)
         
-        # Select model-specific parameters
-        if (input$model == "time_varying.stan") {
-          lam <- array(NA, dim = c(nT, 5, nL))
-          
-          for (l in 1:nL) for (t in 1:nT) {
-            lam[t, 4, l] <- districts_order[l]
-            lam[t, 5, l] <- unique(df_long$Year)[t]
-            lam[t, 1:3, l] <- quantile(chains$lam_t[, l, t], c(0.5, 0.025, 0.975))
-          }
-          
-          lambda <- do.call(rbind, lapply(1:nL, function(l) lam[,, l]))
-          lambda <- as.data.frame(lambda)
-          colnames(lambda) <- c("med", "ciL", "ciU", "loc", "year")
-          lambda$year <- rep(seq(input$year[1], input$year[2], 1), nL)
-          
-          lambda$med <- as.numeric(lambda$med)
-          lambda$ciL <- as.numeric(lambda$ciL)
-          lambda$ciU <- as.numeric(lambda$ciU)
-          
-          writexl::write_xlsx(lambda, path = "lambda_estimates.xlsx")
-        } else {
-          
-          lambda <- lam_H
-        }
+        lambda$med <- as.numeric(lambda$med)
+        lambda$ciL <- as.numeric(lambda$ciL)
+        lambda$ciU <- as.numeric(lambda$ciU)
+        
+        writexl::write_xlsx(lambda, path = "lambda_estimates.xlsx")
+      } else {
+        
+        lambda <- lam_H
+      }
       
       # Write lambda estimates to Excel
       
@@ -336,16 +361,17 @@ server <- function(input, output, session) {
       
       # plot_ready(TRUE)  # Print plots
       
-      return(list(fit = fit, lambda = lambda, case_wide = cases, pars= pars, nT=nT, nL=nL, nA=nA, district_list = districts_order))
+      return(list(fit = fit, lambda = lambda, case_wide = cases, pars= pars, 
+                  nT=nT, nL=nL, nA=nA, district_list = districts_order, age_group = age_group))
     })
   })
-    
+  
   
   # define tables for lambda and pars
   
   output$lambdaTable <- renderTable({
     if (input$model == "time_varying.stan"){
-    lambda_values <- as.data.frame(model_fit()$lambda)
+      lambda_values <- as.data.frame(model_fit()$lambda)
     } else  {
       lambda_values <- as.data.frame(model_fit()$lambda) 
     }
@@ -365,56 +391,56 @@ server <- function(input, output, session) {
     
     if (input$model == "time_varying.stan"){
       
-    for (i in 1:length(model_fit()$district_list)) {
-      fit.df <- data.frame(model_fit()$case_wide[i,,])
-      fit.df <- fit.df %>%
-        pivot_longer(c(1:8), names_to = "Age_Group", values_to = "Cases")
-      
-      fit.df$year <- rep(1:model_fit()$nT, each = model_fit()$nA)
-      
-      ageG <- fit.df$Age_Group[1:8]
-      fit.df[, c('pred', 'ciL', 'ciU')] <- NA
-      
-      fit.df <- as.data.frame(fit.df)
-      for (t in 1:model_fit()$nT) for (a in 1:model_fit()$nA) {
-        fit.df[fit.df$year == t & fit.df$Age_Group == ageG[a], 4:6] <- quantile(chains$Ecases[, i, t, a], c(0.5, 0.025, 0.975))
+      for (i in 1:length(model_fit()$district_list)) {
+        fit.df <- data.frame(model_fit()$case_wide[i,,])
+        fit.df <- fit.df %>%
+          pivot_longer(c(1:model_fit()$nA), names_to = "Age_Group", values_to = "Cases")
+        
+        fit.df$year <- rep(1:model_fit()$nT, each = model_fit()$nA)
+        
+        ageG <- fit.df$Age_Group[1:model_fit()$nA]
+        fit.df[, c('pred', 'ciL', 'ciU')] <- NA
+        
+        fit.df <- as.data.frame(fit.df)
+        for (t in 1:model_fit()$nT) for (a in 1:model_fit()$nA) {
+          fit.df[fit.df$year == t & fit.df$Age_Group == ageG[a], 4:6] <- quantile(chains$Ecases[, i, t, a], c(0.5, 0.025, 0.975))
+        }
+        
+        fit.df$Age_group <- rep(model_fit()$age_group, model_fit()$nT)
+        # fit.df$Age_group <- factor(fit.df$Age_group, levels = c("0-04 yrs", "05-09 yrs", "10-14 yrs", "15-19 yrs", "20-24 yrs", "25-49 yrs", "50-64 yrs", "65+ yrs"))
+        
+        fit.df$loc <- unique(model_fit()$district_list)[i]
+        fit_tot <- rbind(fit_tot, fit.df)
       }
       
-      fit.df$Age_group <- rep(c("0-04 yrs", "05-09 yrs", "10-14 yrs", "15-19 yrs", "20-24 yrs", "25-49 yrs", "50-64 yrs", "65+ yrs"), model_fit()$nT)
-      fit.df$Age_group <- factor(fit.df$Age_group, levels = c("0-04 yrs", "05-09 yrs", "10-14 yrs", "15-19 yrs", "20-24 yrs", "25-49 yrs", "50-64 yrs", "65+ yrs"))
+      fit_tot$year <- fit_tot$year 
       
-      fit.df$loc <- unique(model_fit()$district_list)[i]
-      fit_tot <- rbind(fit_tot, fit.df)
-    }
-    
-    fit_tot$year <- fit_tot$year + 2016
-    
-    
-    
-    plot <-  ggplot(fit_tot) +
-      geom_point(aes(x = Age_group, y = Cases, colour = "observed"), size = 2) +
-      geom_ribbon(aes(x = Age_group, ymin=ciL, ymax=ciU, group=year, fill= "estimated 95% CrI"), alpha = 0.3) +
-      geom_line(aes(x = Age_group, y = pred, group=year, colour = "estimated median"), size = 1) +
-      facet_grid(loc ~ year, scales = "free_y") +
-      labs(x = NULL, y = paste("Incidence per 10.000 population")) +
-      scale_color_manual(name = NULL, values = c("observed" = "black", "estimated median" = "dodgerblue")) +
-      scale_fill_manual(name = NULL, values = c("observed" = "black", "estimated 95% CrI" = "dodgerblue")) +
-      theme_bw() +
-      theme(
-        axis.text.x = element_text(angle = 45, hjust = 1),
-        legend.position = "top"
-      )
-    
+      
+      
+      plot <-  ggplot(fit_tot) +
+        geom_point(aes(x = Age_group, y = Cases, colour = "observed"), size = 2) +
+        geom_ribbon(aes(x = Age_group, ymin=ciL, ymax=ciU, group=year, fill= "estimated 95% CrI"), alpha = 0.3) +
+        geom_line(aes(x = Age_group, y = pred, group=year, colour = "estimated median"), size = 1) +
+        facet_grid(loc ~ year, scales = "free_y") +
+        labs(x = NULL, y = paste("Incidence per 10.000 population")) +
+        scale_color_manual(name = NULL, values = c("observed" = "black", "estimated median" = "dodgerblue")) +
+        scale_fill_manual(name = NULL, values = c("observed" = "black", "estimated 95% CrI" = "dodgerblue")) +
+        theme_bw() +
+        theme(
+          axis.text.x = element_text(angle = 45, hjust = 1),
+          legend.position = "top"
+        )
+      
     } else {
       
       for (i in 1:length(model_fit()$district_list)) {
         fit.df <- data.frame(model_fit()$case_wide[i,,])
         fit.df <- fit.df %>%
-          pivot_longer(c(1:8), names_to = "Age_Group", values_to = "Cases")
+          pivot_longer(c(1:model_fit()$nA), names_to = "Age_Group", values_to = "Cases")
         
         fit.df$year <- rep(1:model_fit()$nT, each = model_fit()$nA)
         
-        ageG <- fit.df$Age_Group[1:8]
+        ageG <- fit.df$Age_Group[1:model_fit()$nA]
         fit.df <- as.data.frame(fit.df)
         
         fit.df <- fit.df %>%
@@ -429,7 +455,7 @@ server <- function(input, output, session) {
           fit.df[fit.df$Age_Group == ageG[a], "ciL"] <- quantile(chains$Ecases[, i, a], 0.025)
           fit.df[fit.df$Age_Group == ageG[a], "ciU"] <- quantile(chains$Ecases[, i, a], 0.975)
           # fit.df[fit.df$Age_Group == ageG[a], c("pred", "ciL", "ciU")] <- list(quantile(chains$Ecases[, i, a], c(0.5, 0.025, 0.975)))
-
+          
         }
         
         fit.df$Age_group <- c("0-04 yrs", "05-09 yrs", "10-14 yrs", "15-19 yrs", "20-24 yrs", "25-49 yrs", "50-64 yrs", "65+ yrs")
@@ -453,7 +479,7 @@ server <- function(input, output, session) {
           axis.text.x = element_text(angle = 45, hjust = 1),
           legend.position = "top"
         )
-
+      
       
     }
     plot
@@ -467,13 +493,13 @@ server <- function(input, output, session) {
     
     
     if (input$model == "time_varying.stan"){
-    lambda <- model_fit()$lambda
-    lambda.years <- unique(lambda$year)
-    lamH <- filter(model_fit()$pars, year == "lam_H")
-    lambda <- rbind(lambda, lamH)
-    lambda$year <- factor(lambda$year, levels = c("lam_H", lambda.years))
+      lambda <- model_fit()$lambda
+      lambda.years <- unique(lambda$year)
+      lamH <- filter(model_fit()$pars, year == "lam_H")
+      lambda <- rbind(lambda, lamH)
+      lambda$year <- factor(lambda$year, levels = c("lam_H", lambda.years))
     } else  {
-    lambda <- model_fit()$lambda
+      lambda <- model_fit()$lambda
     }
     
     
@@ -532,7 +558,7 @@ server <- function(input, output, session) {
     
     # Extract the traceplot for specific parameters
     traceplot(fit, inc_warmup = FALSE, ncol = 4)
-
+    
   })
   
   # Rhat Values Output
@@ -550,6 +576,24 @@ server <- function(input, output, session) {
     rhat_df  # Return Rhat values as a table
   })
   
+  output$rhatWarning <- renderUI({
+    req(model_fit())  # Assicurati che il modello sia stato eseguito
+    
+    # Estrai Rhat dal fit
+    fit <- model_fit()$fit
+    fit_summary <- summary(fit)$summary
+    max_rhat <- max(fit_summary[, "Rhat"], na.rm = TRUE)
+    
+    if (max_rhat > 1.2) {
+      # Barra di avviso rossa
+      div(
+        style = "background-color: #FFCCCC; color: red; padding: 10px; margin-bottom: 10px; border: 1px solid red; border-radius: 5px;",
+        strong("WARNING: Improve model fit (Rhat > 1.2)! suggestion: change reference age group and increase iterations")
+      )
+    } else {
+      NULL  # Nessun messaggio se Rhat va bene
+    }
+  })
   
   # Server
   output$downloadAllPlots <- downloadHandler(
