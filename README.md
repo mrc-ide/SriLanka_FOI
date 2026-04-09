@@ -26,11 +26,11 @@ It allows users to:
   - Population data  
   Columns should include *province, district, year, and age group*.  
 
-- **Separator Selection**: Choose between comma, semicolon, or tab delimiters.  
-
 - **Province and Year Selection**:  
   - Dropdown for province selection  
-  - Slider for year range  
+  - Slider for year range
+ 
+- **Select Reference Age-group**: the app uses the reference age-group to estimate age modifiers for the reporting of groups younger (χ1) and older (χ2) than the reference.
 
 ---
 
@@ -48,7 +48,7 @@ It allows users to:
   - Click **Run Model** to start.  
   - Progress bar shows model fitting stages.  
   - Results appear once complete.  
-  - If an error (`incorrect number of dimensions`) occurs, it will resolve automatically after the process finishes.  
+  - Errors with convergence will appear in red.
 
 ---
 
