@@ -1,3 +1,4 @@
+//time-varying model
 
 data {
   int nA; // N age groups
@@ -13,11 +14,12 @@ data {
   row_vector[100] age; // age as sequence from 0 to 99
   array [nL, nT]int sum_cases;
   array[nA] real age_band;
+  int X; //reference age group with no age modifier in reportint
 }
 
 parameters {
-  array[nL] real<lower=0,upper=0.25> lam_H; // historic average FOI for each location
-  array[nL, nT] real<lower=0,upper=0.25> lam_t; // time varying FOI for each location and time
+  array[nL] real<lower=0.001,upper=0.25> lam_H; // historic average FOI for each location
+  array[nL, nT] real<lower=0.001,upper=0.25> lam_t; // time varying FOI for each location and time
   array[nP] real<lower=0, upper=1> rho; // reporting rate of 2nd infections (same for all locations)
   array[nP] real<lower=0, upper=1> gamma; // relative reporting rate of 1st infections (same for all locations)
   array[nL] real<lower=0.45,upper=2> chi1;
@@ -76,13 +78,13 @@ transformed parameters {
 
     // Expected reported cases
     for (t in 1:nT) {
-      for (a in 1:4) {
+      for (a in 1:(X-1)) {
       Ecases[l, t, a] = N * rho[prov_N[l]] * chi1[l] * (mean(inc2[l, t, ageLims[1, a]:ageLims[2, a]]) + gamma[prov_N[l]] * mean(inc1[l, t, ageLims[1, a]:ageLims[2, a]])); 
       }
       
-    Ecases[l, t, 5] = N * rho[prov_N[l]] *(mean(inc2[l, t, ageLims[1, 5]:ageLims[2, 5]]) + gamma[prov_N[l]] * mean(inc1[l, t, ageLims[1, 5]:ageLims[2, 5]])); 
+    Ecases[l, t, X] = N * rho[prov_N[l]] *(mean(inc2[l, t, ageLims[1, X]:ageLims[2, X]]) + gamma[prov_N[l]] * mean(inc1[l, t, ageLims[1, X]:ageLims[2, X]])); 
     
-    for (a in 6:nA) {
+    for (a in (X+1):nA) {
       Ecases[l, t, a] = N * rho[prov_N[l]] * chi2[l] * (mean(inc2[l, t, ageLims[1, a]:ageLims[2, a]]) + gamma[prov_N[l]] * mean(inc1[l, t, ageLims[1, a]:ageLims[2, a]])); 
       }
       
@@ -112,10 +114,10 @@ transformed parameters {
 model {
   
   // Priors
-  for (L in 1:nL) lam_H[L] ~ normal(0, 0.5);
-  for (L in 1:nL) for (T in 1:nT)  lam_t[L,T] ~ normal(0, 0.5);
-  for (L in 1:nP) rho[L] ~ normal(0, 0.5);
-  for (L in 1:nP) gamma[L] ~ normal(0, 0.5);
+  for (L in 1:nL) lam_H[L] ~ normal(0, 0.1);
+  for (L in 1:nL) for (T in 1:nT)  lam_t[L,T] ~ normal(0, 0.1);
+  for (L in 1:nP) rho[L] ~ normal(0.8, 0.2);
+  for (L in 1:nP) gamma[L] ~ normal(0.5, 0.2);
    for (L in 1:nL) chi1[L] ~ normal(1, 1);
    for (L in 1:nL) chi2[L] ~ normal(1, 1);
 
