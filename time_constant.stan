@@ -1,4 +1,4 @@
-// IMAI MODEL  attempt with upper bound chi from 2 to 1.5, change lower bound to 0.5 and the priors n rhos and gamma
+// time-constant morel
 
 data {
   
@@ -13,6 +13,7 @@ data {
   // row_vector[100] age; // age as sequence from 0 to 99
   array[nL, nT, nA] int cases_inc; //incidence
   array[nA] real age_band;
+  int X; //reference age group with no age modifier in reportint
 }
 
 transformed data {
@@ -57,13 +58,13 @@ transformed parameters {
    
    
     // Expected reported cases -> should we didve by age band???
-      for (a in 1:4) {
+      for (a in 1:(X-1)) {
       Ecases[l, a] = N * rho[prov_N[l]] * chi1[l] * (inc2[l, a] + gamma[prov_N[l]] * inc1[l, a]) * (1/  age_band[a]);
       }
       
-     Ecases[l, 5] = N * rho[prov_N[l]]* (inc2[l, 5] + gamma[prov_N[l]] * inc1[l, 5]) * (1/  age_band[5]);
+     Ecases[l, X] = N * rho[prov_N[l]]* (inc2[l, X] + gamma[prov_N[l]] * inc1[l, X]) * (1/  age_band[X]);
     
-    for (a in 6:nA) {
+    for (a in (X+1):nA) {
        Ecases[l, a] = N * rho[prov_N[l]] * chi2[l] * (inc2[l, a] + gamma[prov_N[l]] * inc1[l, a]) * (1/  age_band[a]);
       }
       
@@ -92,9 +93,9 @@ model {
   
   //--- priors
   
-   for (L in 1:nL) lam_H[L] ~ normal(0, 0.5);
-  for (L in 1:nP) rho[L] ~ normal(0.5, 0.5);
-  for (L in 1:nP) gamma[L] ~ normal(0.5, 0.5);
+   for (L in 1:nL) lam_H[L] ~ normal(0, 0.1);
+  for (L in 1:nP) rho[L] ~ normal(0.8, 0.2);
+  for (L in 1:nP) gamma[L] ~ normal(0.5, 0.2);
    for (L in 1:nL) chi1[L] ~ normal(1, 1);
    for (L in 1:nL) chi2[L] ~ normal(1, 1);
 
