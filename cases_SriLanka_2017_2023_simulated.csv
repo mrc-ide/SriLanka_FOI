@@ -1,176 +1,1401 @@
-,Year,District,0...04 yrs,05...09 yrs,10...14 yrs,15...19 yrs,20...24 yrs,25...49 yrs,50...64 yrs,65+ yrs,Province
-1,2017,Ampara,1120,1928,1582,1110,635,1710,530,178,Eastern
-2,2018,Ampara,1180,1200,930,712,570,1572,630,272,Eastern
-3,2019,Ampara,310,628,678,668,588,1398,330,92,Eastern
-4,2020,Ampara,222,392,488,528,292,950,268,100,Eastern
-5,2021,Ampara,68,120,172,150,125,330,72,28,Eastern
-6,2022,Ampara,410,688,1010,1130,690,1612,415,98,Eastern
-7,2023,Ampara,370,452,742,820,545,1495,472,140,Eastern
-8,2017,Anuradhapura,65,85,150,458,945,2978,625,140,North_Central
-9,2018,Anuradhapura,28,35,40,135,225,950,232,40,North_Central
-10,2019,Anuradhapura,52,58,52,198,438,1252,268,82,North_Central
-11,2020,Anuradhapura,60,18,20,60,138,458,110,30,North_Central
-12,2021,Anuradhapura,5,8,12,65,225,545,80,8,North_Central
-13,2022,Anuradhapura,15,18,38,88,245,705,155,45,North_Central
-14,2023,Anuradhapura,25,38,48,192,372,920,242,48,North_Central
-15,2017,Badulla,148,295,382,672,758,2000,580,190,Uva
-16,2018,Badulla,10,25,40,95,90,270,78,10,Uva
-17,2019,Badulla,155,202,310,528,768,1940,495,142,Uva
-18,2020,Badulla,32,48,82,132,212,540,160,35,Uva
-19,2021,Badulla,68,108,160,200,252,848,258,80,Uva
-20,2022,Badulla,105,162,220,362,528,1428,342,110,Uva
-21,2023,Badulla,115,268,440,612,812,1810,482,150,Uva
-22,2017,Batticaloa,1120,1848,1730,1742,1550,3632,850,280,Eastern
-23,2018,Batticaloa,1002,1528,1585,1482,1265,3395,1035,345,Eastern
-24,2019,Batticaloa,510,715,680,880,798,2278,522,180,Eastern
-25,2020,Batticaloa,930,1595,1940,1778,1120,2998,875,300,Eastern
-26,2021,Batticaloa,885,1272,1465,1208,850,2362,530,232,Eastern
-27,2022,Batticaloa,340,502,440,408,288,835,240,85,Eastern
-28,2023,Batticaloa,620,848,1002,1060,708,1930,578,230,Eastern
-29,2017,Colombo,7550,12822,13445,11450,13125,37098,10000,4962,Western
-30,2018,Colombo,2562,3575,3582,4005,4690,13085,3210,1338,Western
-31,2019,Colombo,5628,8032,8688,8632,8558,24140,5890,2780,Western
-32,2020,Colombo,1202,1368,1520,1588,2038,5512,1348,635,Western
-33,2021,Colombo,1670,2360,2878,2782,4198,12648,1935,695,Western
-34,2022,Colombo,2480,3540,4110,4972,5962,16780,3880,1915,Western
-35,2023,Colombo,2110,3222,4280,5940,6330,17000,4502,2220,Western
-36,2017,Galle,330,545,1008,1645,2855,7818,2510,912,Southern
-37,2018,Galle,60,85,90,250,452,1218,322,122,Southern
-38,2019,Galle,548,970,1358,2388,2998,9018,3008,1258,Southern
-39,2020,Galle,95,52,148,325,392,1592,620,298,Southern
-40,2021,Galle,20,55,65,132,320,1035,185,48,Southern
-41,2022,Galle,220,345,482,885,1348,4205,1445,575,Southern
-42,2023,Galle,242,348,405,858,1465,4048,1300,548,Southern
-43,2017,Gampaha,4738,7832,10302,9870,10268,32385,10590,4640,Western
-44,2018,Gampaha,1422,1405,1295,1665,2142,6362,1825,805,Western
-45,2019,Gampaha,3228,4442,4375,5692,5375,16558,4890,1858,Western
-46,2020,Gampaha,702,510,512,828,820,2978,1060,478,Western
-47,2021,Gampaha,860,1162,1680,1762,2038,6808,1688,572,Western
-48,2022,Gampaha,1395,1875,2440,3932,4150,13435,4390,1675,Western
-49,2023,Gampaha,1872,2395,3050,4818,5390,15622,5032,2025,Western
-50,2017,Hambantota,162,208,308,582,1308,3620,1305,420,Southern
-51,2018,Hambantota,58,68,102,205,340,948,292,162,Southern
-52,2019,Hambantota,120,182,218,425,728,1980,602,215,Southern
-53,2020,Hambantota,28,18,22,75,135,372,152,50,Southern
-54,2021,Hambantota,28,12,25,42,170,682,180,55,Southern
-55,2022,Hambantota,100,130,172,380,582,1618,452,162,Southern
-56,2023,Hambantota,95,112,205,382,475,1378,382,220,Southern
-57,2017,Jaffna,600,878,905,1258,1458,3232,722,398,Northen
-58,2018,Jaffna,690,838,875,1095,1170,2820,782,395,Northen
-59,2019,Jaffna,1325,1795,1505,2018,2365,5338,1508,718,Northen
-60,2020,Jaffna,398,360,428,412,542,1690,585,335,Northen
-61,2021,Jaffna,60,38,58,48,62,195,52,22,Northen
-62,2022,Jaffna,842,832,755,922,1070,2970,742,390,Northen
-63,2023,Jaffna,1025,958,848,1140,1592,3718,1010,492,Northen
-64,2017,Kaluthara,880,1210,1888,2698,3372,10832,3790,1598,Western
-65,2018,Kaluthara,312,358,410,808,1125,3242,935,400,Western
-66,2019,Kaluthara,855,1120,1408,2690,2825,9118,2738,1058,Western
-67,2020,Kaluthara,245,168,250,408,582,1912,610,278,Western
-68,2021,Kaluthara,280,252,365,742,990,3392,935,298,Western
-69,2022,Kaluthara,518,670,860,1748,2070,6895,2158,795,Western
-70,2023,Kaluthara,525,685,750,1445,1828,5182,1600,698,Western
-71,2017,Kandy,1408,2845,4498,5562,5058,14302,4752,1808,Central
-72,2018,Kandy,355,670,780,1355,1368,3975,1878,852,Central
-73,2019,Kandy,1112,1875,2328,3388,3412,8830,3495,1532,Central
-74,2020,Kandy,400,575,688,1125,1128,4010,1590,695,Central
-75,2021,Kandy,92,65,112,258,430,1830,700,322,Central
-76,2022,Kandy,582,1070,1512,2015,2090,5955,2075,868,Central
-77,2023,Kandy,882,1500,2088,2798,2820,7525,2782,1215,Central
-78,2017,Kegalle,600,832,1215,1502,1982,7995,3865,1625,Sabaragamuwa
-79,2018,Kegalle,222,265,232,322,485,1490,685,318,Sabaragamuwa
-80,2019,Kegalle,320,442,438,618,770,2675,980,465,Sabaragamuwa
-81,2020,Kegalle,140,108,102,152,210,818,420,198,Sabaragamuwa
-82,2021,Kegalle,62,35,58,135,262,985,285,130,Sabaragamuwa
-83,2022,Kegalle,230,440,505,758,900,3188,1250,485,Sabaragamuwa
-84,2023,Kegalle,298,390,440,635,1035,3530,1585,770,Sabaragamuwa
-85,2017,Kilinochchi,40,52,55,112,205,472,55,25,Northen
-86,2018,Kilinochchi,10,10,12,82,152,305,45,8,Northen
-87,2019,Kilinochchi,40,65,42,75,170,285,70,20,Northen
-88,2020,Kilinochchi,22,22,12,10,25,62,18,18,Northen
-89,2021,Kilinochchi,0,0,2,8,15,28,15,8,Northen
-90,2022,Kilinochchi,15,2,10,25,65,198,15,18,Northen
-91,2023,Kilinochchi,8,8,18,35,58,122,10,20,Northen
-92,2017,Kurunegala,560,960,1560,1728,2450,7942,2940,1062,North_Western
-93,2018,Kurunegala,172,215,228,278,545,2100,635,200,North_Western
-94,2019,Kurunegala,285,310,310,528,1102,3205,1088,358,North_Western
-95,2020,Kurunegala,65,85,92,145,260,948,345,150,North_Western
-96,2021,Kurunegala,205,172,245,332,682,2258,612,168,North_Western
-97,2022,Kurunegala,135,190,318,412,888,3088,898,342,North_Western
-98,2023,Kurunegala,178,262,410,642,1475,3785,1220,390,North_Western
-99,2017,Mannar,95,168,188,228,148,412,85,35,Northen
-100,2018,Mannar,20,65,55,98,90,152,38,22,Northen
-101,2019,Mannar,58,92,70,98,105,192,50,28,Northen
-102,2020,Mannar,38,12,35,42,52,105,25,15,Northen
-103,2021,Mannar,70,75,132,138,90,315,48,32,Northen
-104,2022,Mannar,30,48,60,88,80,292,78,30,Northen
-105,2023,Mannar,18,38,28,65,100,175,60,28,Northen
-106,2017,Matale,275,438,695,822,698,2082,678,238,Central
-107,2018,Matale,118,138,162,202,182,648,210,98,Central
-108,2019,Matale,452,652,738,782,710,2078,650,208,Central
-109,2020,Matale,205,140,132,130,155,558,148,80,Central
-110,2021,Matale,42,15,12,40,115,372,98,32,Central
-111,2022,Matale,248,378,412,368,355,1105,270,98,Central
-112,2023,Matale,205,362,478,488,518,1595,490,180,Central
-113,2017,Matara,468,698,1015,1488,2198,5805,1988,822,Southern
-114,2018,Matara,125,142,200,305,438,1162,372,135,Southern
-115,2019,Matara,318,645,728,1100,1368,3725,1170,478,Southern
-116,2020,Matara,60,55,78,115,200,592,202,108,Southern
-117,2021,Matara,75,110,125,202,252,828,210,92,Southern
-118,2022,Matara,125,262,345,388,528,1778,542,232,Southern
-119,2023,Matara,92,142,212,330,528,1655,678,355,Southern
-120,2017,Moneragala,10,40,52,145,240,722,235,90,Uva
-121,2018,Moneragala,12,2,15,22,62,202,65,15,Uva
-122,2019,Moneragala,32,40,40,145,255,758,265,88,Uva
-123,2020,Moneragala,25,20,30,62,65,435,162,72,Uva
-124,2021,Moneragala,8,8,15,20,60,285,85,28,Uva
-125,2022,Moneragala,32,30,32,110,182,632,182,75,Uva
-126,2023,Moneragala,12,32,55,138,268,818,295,112,Uva
-127,2017,Mullaitivu,12,22,5,78,158,472,98,22,Northen
-128,2018,Mullaitivu,5,10,2,50,78,178,20,8,Northen
-129,2019,Mullaitivu,12,18,8,90,152,282,55,32,Northen
-130,2020,Mullaitivu,12,0,10,22,35,70,20,12,Northen
-131,2021,Mullaitivu,0,0,0,0,2,2,0,0,Northen
-132,2022,Mullaitivu,5,0,2,2,20,42,10,2,Northen
-133,2023,Mullaitivu,2,10,10,32,58,182,55,25,Northen
-134,2017,Nuwara Eliya,22,38,65,365,528,1212,305,120,Central
-135,2018,Nuwara Eliya,15,10,20,102,140,358,135,45,Central
-136,2019,Nuwara Eliya,30,32,35,150,168,550,162,62,Central
-137,2020,Nuwara Eliya,8,0,2,25,55,140,35,20,Central
-138,2021,Nuwara Eliya,0,2,5,18,58,160,32,10,Central
-139,2022,Nuwara Eliya,15,15,15,45,100,232,62,22,Central
-140,2023,Nuwara Eliya,15,8,15,58,178,265,68,18,Central
-141,2017,Polonnaruwa,0,0,22,120,190,915,245,85,North_Central
-142,2018,Polonnaruwa,5,2,10,38,48,175,42,15,North_Central
-143,2019,Polonnaruwa,5,5,15,130,288,842,158,62,North_Central
-144,2020,Polonnaruwa,10,5,8,32,80,192,80,32,North_Central
-145,2021,Polonnaruwa,2,0,0,15,52,210,22,12,North_Central
-146,2022,Polonnaruwa,8,10,8,50,175,455,108,52,North_Central
-147,2023,Polonnaruwa,20,5,18,130,280,785,228,102,North_Central
-148,2017,Puttalam,948,1558,1508,1672,1425,4762,1555,580,North_Western
-149,2018,Puttalam,850,1042,475,335,460,1145,355,100,North_Western
-150,2019,Puttalam,505,680,622,798,908,2635,855,262,North_Western
-151,2020,Puttalam,118,105,118,152,135,480,212,98,North_Western
-152,2021,Puttalam,85,132,120,190,265,822,268,102,North_Western
-153,2022,Puttalam,428,608,892,1212,1190,3978,1398,585,North_Western
-154,2023,Puttalam,435,588,775,1332,1228,3890,1490,578,North_Western
-155,2017,Ratnapura,425,702,1312,2040,3188,10725,3530,1515,Sabaragamuwa
-156,2018,Ratnapura,65,175,165,410,752,2342,778,378,Sabaragamuwa
-157,2019,Ratnapura,222,310,410,990,1515,4608,1628,730,Sabaragamuwa
-158,2020,Ratnapura,98,120,210,435,468,2135,1040,405,Sabaragamuwa
-159,2021,Ratnapura,72,32,72,175,325,1215,345,142,Sabaragamuwa
-160,2022,Ratnapura,108,160,335,918,1315,4058,1272,642,Sabaragamuwa
-161,2023,Ratnapura,150,198,252,722,1078,3710,1458,705,Sabaragamuwa
-162,2017,Trincomalee,550,835,852,915,878,2398,518,128,Eastern
-163,2018,Trincomalee,282,288,258,362,398,1072,260,72,Eastern
-164,2019,Trincomalee,408,670,752,788,760,2198,462,132,Eastern
-165,2020,Trincomalee,410,610,765,768,582,1898,522,142,Eastern
-166,2021,Trincomalee,45,42,58,100,128,330,68,20,Eastern
-167,2022,Trincomalee,135,162,230,360,412,1315,242,80,Eastern
-168,2023,Trincomalee,415,552,628,628,658,1725,465,192,Eastern
-169,2017,Vavuniya,8,28,20,252,515,942,215,102,Northen
-170,2018,Vavuniya,10,50,55,145,238,508,120,42,Northen
-171,2019,Vavuniya,12,28,30,120,172,450,110,40,Northen
-172,2020,Vavuniya,18,22,65,88,128,268,98,32,Northen
-173,2021,Vavuniya,0,5,0,8,25,88,12,0,Northen
-174,2022,Vavuniya,0,0,0,18,55,135,30,10,Northen
-175,2023,Vavuniya,2,5,2,48,62,175,25,25,Northen
+"","X","Year","District","Province","AgeGroup","Cases","min_age","max_age"
+"1",1,2017,"Ampara","Eastern","0-04 yrs",1120,0,4
+"2",1,2017,"Ampara","Eastern","05-09 yrs",1928,5,9
+"3",1,2017,"Ampara","Eastern","10-14 yrs",1582,10,14
+"4",1,2017,"Ampara","Eastern","15-19 yrs",1110,15,19
+"5",1,2017,"Ampara","Eastern","20-24 yrs",635,20,24
+"6",1,2017,"Ampara","Eastern","25-49 yrs",1710,25,49
+"7",1,2017,"Ampara","Eastern","50-64 yrs",530,50,64
+"8",1,2017,"Ampara","Eastern","65-99 yrs",178,65,99
+"9",2,2018,"Ampara","Eastern","0-04 yrs",1180,0,4
+"10",2,2018,"Ampara","Eastern","05-09 yrs",1200,5,9
+"11",2,2018,"Ampara","Eastern","10-14 yrs",930,10,14
+"12",2,2018,"Ampara","Eastern","15-19 yrs",712,15,19
+"13",2,2018,"Ampara","Eastern","20-24 yrs",570,20,24
+"14",2,2018,"Ampara","Eastern","25-49 yrs",1572,25,49
+"15",2,2018,"Ampara","Eastern","50-64 yrs",630,50,64
+"16",2,2018,"Ampara","Eastern","65-99 yrs",272,65,99
+"17",3,2019,"Ampara","Eastern","0-04 yrs",310,0,4
+"18",3,2019,"Ampara","Eastern","05-09 yrs",628,5,9
+"19",3,2019,"Ampara","Eastern","10-14 yrs",678,10,14
+"20",3,2019,"Ampara","Eastern","15-19 yrs",668,15,19
+"21",3,2019,"Ampara","Eastern","20-24 yrs",588,20,24
+"22",3,2019,"Ampara","Eastern","25-49 yrs",1398,25,49
+"23",3,2019,"Ampara","Eastern","50-64 yrs",330,50,64
+"24",3,2019,"Ampara","Eastern","65-99 yrs",92,65,99
+"25",4,2020,"Ampara","Eastern","0-04 yrs",222,0,4
+"26",4,2020,"Ampara","Eastern","05-09 yrs",392,5,9
+"27",4,2020,"Ampara","Eastern","10-14 yrs",488,10,14
+"28",4,2020,"Ampara","Eastern","15-19 yrs",528,15,19
+"29",4,2020,"Ampara","Eastern","20-24 yrs",292,20,24
+"30",4,2020,"Ampara","Eastern","25-49 yrs",950,25,49
+"31",4,2020,"Ampara","Eastern","50-64 yrs",268,50,64
+"32",4,2020,"Ampara","Eastern","65-99 yrs",100,65,99
+"33",5,2021,"Ampara","Eastern","0-04 yrs",68,0,4
+"34",5,2021,"Ampara","Eastern","05-09 yrs",120,5,9
+"35",5,2021,"Ampara","Eastern","10-14 yrs",172,10,14
+"36",5,2021,"Ampara","Eastern","15-19 yrs",150,15,19
+"37",5,2021,"Ampara","Eastern","20-24 yrs",125,20,24
+"38",5,2021,"Ampara","Eastern","25-49 yrs",330,25,49
+"39",5,2021,"Ampara","Eastern","50-64 yrs",72,50,64
+"40",5,2021,"Ampara","Eastern","65-99 yrs",28,65,99
+"41",6,2022,"Ampara","Eastern","0-04 yrs",410,0,4
+"42",6,2022,"Ampara","Eastern","05-09 yrs",688,5,9
+"43",6,2022,"Ampara","Eastern","10-14 yrs",1010,10,14
+"44",6,2022,"Ampara","Eastern","15-19 yrs",1130,15,19
+"45",6,2022,"Ampara","Eastern","20-24 yrs",690,20,24
+"46",6,2022,"Ampara","Eastern","25-49 yrs",1612,25,49
+"47",6,2022,"Ampara","Eastern","50-64 yrs",415,50,64
+"48",6,2022,"Ampara","Eastern","65-99 yrs",98,65,99
+"49",7,2023,"Ampara","Eastern","0-04 yrs",370,0,4
+"50",7,2023,"Ampara","Eastern","05-09 yrs",452,5,9
+"51",7,2023,"Ampara","Eastern","10-14 yrs",742,10,14
+"52",7,2023,"Ampara","Eastern","15-19 yrs",820,15,19
+"53",7,2023,"Ampara","Eastern","20-24 yrs",545,20,24
+"54",7,2023,"Ampara","Eastern","25-49 yrs",1495,25,49
+"55",7,2023,"Ampara","Eastern","50-64 yrs",472,50,64
+"56",7,2023,"Ampara","Eastern","65-99 yrs",140,65,99
+"57",8,2017,"Anuradhapura","North_Central","0-04 yrs",65,0,4
+"58",8,2017,"Anuradhapura","North_Central","05-09 yrs",85,5,9
+"59",8,2017,"Anuradhapura","North_Central","10-14 yrs",150,10,14
+"60",8,2017,"Anuradhapura","North_Central","15-19 yrs",458,15,19
+"61",8,2017,"Anuradhapura","North_Central","20-24 yrs",945,20,24
+"62",8,2017,"Anuradhapura","North_Central","25-49 yrs",2978,25,49
+"63",8,2017,"Anuradhapura","North_Central","50-64 yrs",625,50,64
+"64",8,2017,"Anuradhapura","North_Central","65-99 yrs",140,65,99
+"65",9,2018,"Anuradhapura","North_Central","0-04 yrs",28,0,4
+"66",9,2018,"Anuradhapura","North_Central","05-09 yrs",35,5,9
+"67",9,2018,"Anuradhapura","North_Central","10-14 yrs",40,10,14
+"68",9,2018,"Anuradhapura","North_Central","15-19 yrs",135,15,19
+"69",9,2018,"Anuradhapura","North_Central","20-24 yrs",225,20,24
+"70",9,2018,"Anuradhapura","North_Central","25-49 yrs",950,25,49
+"71",9,2018,"Anuradhapura","North_Central","50-64 yrs",232,50,64
+"72",9,2018,"Anuradhapura","North_Central","65-99 yrs",40,65,99
+"73",10,2019,"Anuradhapura","North_Central","0-04 yrs",52,0,4
+"74",10,2019,"Anuradhapura","North_Central","05-09 yrs",58,5,9
+"75",10,2019,"Anuradhapura","North_Central","10-14 yrs",52,10,14
+"76",10,2019,"Anuradhapura","North_Central","15-19 yrs",198,15,19
+"77",10,2019,"Anuradhapura","North_Central","20-24 yrs",438,20,24
+"78",10,2019,"Anuradhapura","North_Central","25-49 yrs",1252,25,49
+"79",10,2019,"Anuradhapura","North_Central","50-64 yrs",268,50,64
+"80",10,2019,"Anuradhapura","North_Central","65-99 yrs",82,65,99
+"81",11,2020,"Anuradhapura","North_Central","0-04 yrs",60,0,4
+"82",11,2020,"Anuradhapura","North_Central","05-09 yrs",18,5,9
+"83",11,2020,"Anuradhapura","North_Central","10-14 yrs",20,10,14
+"84",11,2020,"Anuradhapura","North_Central","15-19 yrs",60,15,19
+"85",11,2020,"Anuradhapura","North_Central","20-24 yrs",138,20,24
+"86",11,2020,"Anuradhapura","North_Central","25-49 yrs",458,25,49
+"87",11,2020,"Anuradhapura","North_Central","50-64 yrs",110,50,64
+"88",11,2020,"Anuradhapura","North_Central","65-99 yrs",30,65,99
+"89",12,2021,"Anuradhapura","North_Central","0-04 yrs",5,0,4
+"90",12,2021,"Anuradhapura","North_Central","05-09 yrs",8,5,9
+"91",12,2021,"Anuradhapura","North_Central","10-14 yrs",12,10,14
+"92",12,2021,"Anuradhapura","North_Central","15-19 yrs",65,15,19
+"93",12,2021,"Anuradhapura","North_Central","20-24 yrs",225,20,24
+"94",12,2021,"Anuradhapura","North_Central","25-49 yrs",545,25,49
+"95",12,2021,"Anuradhapura","North_Central","50-64 yrs",80,50,64
+"96",12,2021,"Anuradhapura","North_Central","65-99 yrs",8,65,99
+"97",13,2022,"Anuradhapura","North_Central","0-04 yrs",15,0,4
+"98",13,2022,"Anuradhapura","North_Central","05-09 yrs",18,5,9
+"99",13,2022,"Anuradhapura","North_Central","10-14 yrs",38,10,14
+"100",13,2022,"Anuradhapura","North_Central","15-19 yrs",88,15,19
+"101",13,2022,"Anuradhapura","North_Central","20-24 yrs",245,20,24
+"102",13,2022,"Anuradhapura","North_Central","25-49 yrs",705,25,49
+"103",13,2022,"Anuradhapura","North_Central","50-64 yrs",155,50,64
+"104",13,2022,"Anuradhapura","North_Central","65-99 yrs",45,65,99
+"105",14,2023,"Anuradhapura","North_Central","0-04 yrs",25,0,4
+"106",14,2023,"Anuradhapura","North_Central","05-09 yrs",38,5,9
+"107",14,2023,"Anuradhapura","North_Central","10-14 yrs",48,10,14
+"108",14,2023,"Anuradhapura","North_Central","15-19 yrs",192,15,19
+"109",14,2023,"Anuradhapura","North_Central","20-24 yrs",372,20,24
+"110",14,2023,"Anuradhapura","North_Central","25-49 yrs",920,25,49
+"111",14,2023,"Anuradhapura","North_Central","50-64 yrs",242,50,64
+"112",14,2023,"Anuradhapura","North_Central","65-99 yrs",48,65,99
+"113",15,2017,"Badulla","Uva","0-04 yrs",148,0,4
+"114",15,2017,"Badulla","Uva","05-09 yrs",295,5,9
+"115",15,2017,"Badulla","Uva","10-14 yrs",382,10,14
+"116",15,2017,"Badulla","Uva","15-19 yrs",672,15,19
+"117",15,2017,"Badulla","Uva","20-24 yrs",758,20,24
+"118",15,2017,"Badulla","Uva","25-49 yrs",2000,25,49
+"119",15,2017,"Badulla","Uva","50-64 yrs",580,50,64
+"120",15,2017,"Badulla","Uva","65-99 yrs",190,65,99
+"121",16,2018,"Badulla","Uva","0-04 yrs",10,0,4
+"122",16,2018,"Badulla","Uva","05-09 yrs",25,5,9
+"123",16,2018,"Badulla","Uva","10-14 yrs",40,10,14
+"124",16,2018,"Badulla","Uva","15-19 yrs",95,15,19
+"125",16,2018,"Badulla","Uva","20-24 yrs",90,20,24
+"126",16,2018,"Badulla","Uva","25-49 yrs",270,25,49
+"127",16,2018,"Badulla","Uva","50-64 yrs",78,50,64
+"128",16,2018,"Badulla","Uva","65-99 yrs",10,65,99
+"129",17,2019,"Badulla","Uva","0-04 yrs",155,0,4
+"130",17,2019,"Badulla","Uva","05-09 yrs",202,5,9
+"131",17,2019,"Badulla","Uva","10-14 yrs",310,10,14
+"132",17,2019,"Badulla","Uva","15-19 yrs",528,15,19
+"133",17,2019,"Badulla","Uva","20-24 yrs",768,20,24
+"134",17,2019,"Badulla","Uva","25-49 yrs",1940,25,49
+"135",17,2019,"Badulla","Uva","50-64 yrs",495,50,64
+"136",17,2019,"Badulla","Uva","65-99 yrs",142,65,99
+"137",18,2020,"Badulla","Uva","0-04 yrs",32,0,4
+"138",18,2020,"Badulla","Uva","05-09 yrs",48,5,9
+"139",18,2020,"Badulla","Uva","10-14 yrs",82,10,14
+"140",18,2020,"Badulla","Uva","15-19 yrs",132,15,19
+"141",18,2020,"Badulla","Uva","20-24 yrs",212,20,24
+"142",18,2020,"Badulla","Uva","25-49 yrs",540,25,49
+"143",18,2020,"Badulla","Uva","50-64 yrs",160,50,64
+"144",18,2020,"Badulla","Uva","65-99 yrs",35,65,99
+"145",19,2021,"Badulla","Uva","0-04 yrs",68,0,4
+"146",19,2021,"Badulla","Uva","05-09 yrs",108,5,9
+"147",19,2021,"Badulla","Uva","10-14 yrs",160,10,14
+"148",19,2021,"Badulla","Uva","15-19 yrs",200,15,19
+"149",19,2021,"Badulla","Uva","20-24 yrs",252,20,24
+"150",19,2021,"Badulla","Uva","25-49 yrs",848,25,49
+"151",19,2021,"Badulla","Uva","50-64 yrs",258,50,64
+"152",19,2021,"Badulla","Uva","65-99 yrs",80,65,99
+"153",20,2022,"Badulla","Uva","0-04 yrs",105,0,4
+"154",20,2022,"Badulla","Uva","05-09 yrs",162,5,9
+"155",20,2022,"Badulla","Uva","10-14 yrs",220,10,14
+"156",20,2022,"Badulla","Uva","15-19 yrs",362,15,19
+"157",20,2022,"Badulla","Uva","20-24 yrs",528,20,24
+"158",20,2022,"Badulla","Uva","25-49 yrs",1428,25,49
+"159",20,2022,"Badulla","Uva","50-64 yrs",342,50,64
+"160",20,2022,"Badulla","Uva","65-99 yrs",110,65,99
+"161",21,2023,"Badulla","Uva","0-04 yrs",115,0,4
+"162",21,2023,"Badulla","Uva","05-09 yrs",268,5,9
+"163",21,2023,"Badulla","Uva","10-14 yrs",440,10,14
+"164",21,2023,"Badulla","Uva","15-19 yrs",612,15,19
+"165",21,2023,"Badulla","Uva","20-24 yrs",812,20,24
+"166",21,2023,"Badulla","Uva","25-49 yrs",1810,25,49
+"167",21,2023,"Badulla","Uva","50-64 yrs",482,50,64
+"168",21,2023,"Badulla","Uva","65-99 yrs",150,65,99
+"169",22,2017,"Batticaloa","Eastern","0-04 yrs",1120,0,4
+"170",22,2017,"Batticaloa","Eastern","05-09 yrs",1848,5,9
+"171",22,2017,"Batticaloa","Eastern","10-14 yrs",1730,10,14
+"172",22,2017,"Batticaloa","Eastern","15-19 yrs",1742,15,19
+"173",22,2017,"Batticaloa","Eastern","20-24 yrs",1550,20,24
+"174",22,2017,"Batticaloa","Eastern","25-49 yrs",3632,25,49
+"175",22,2017,"Batticaloa","Eastern","50-64 yrs",850,50,64
+"176",22,2017,"Batticaloa","Eastern","65-99 yrs",280,65,99
+"177",23,2018,"Batticaloa","Eastern","0-04 yrs",1002,0,4
+"178",23,2018,"Batticaloa","Eastern","05-09 yrs",1528,5,9
+"179",23,2018,"Batticaloa","Eastern","10-14 yrs",1585,10,14
+"180",23,2018,"Batticaloa","Eastern","15-19 yrs",1482,15,19
+"181",23,2018,"Batticaloa","Eastern","20-24 yrs",1265,20,24
+"182",23,2018,"Batticaloa","Eastern","25-49 yrs",3395,25,49
+"183",23,2018,"Batticaloa","Eastern","50-64 yrs",1035,50,64
+"184",23,2018,"Batticaloa","Eastern","65-99 yrs",345,65,99
+"185",24,2019,"Batticaloa","Eastern","0-04 yrs",510,0,4
+"186",24,2019,"Batticaloa","Eastern","05-09 yrs",715,5,9
+"187",24,2019,"Batticaloa","Eastern","10-14 yrs",680,10,14
+"188",24,2019,"Batticaloa","Eastern","15-19 yrs",880,15,19
+"189",24,2019,"Batticaloa","Eastern","20-24 yrs",798,20,24
+"190",24,2019,"Batticaloa","Eastern","25-49 yrs",2278,25,49
+"191",24,2019,"Batticaloa","Eastern","50-64 yrs",522,50,64
+"192",24,2019,"Batticaloa","Eastern","65-99 yrs",180,65,99
+"193",25,2020,"Batticaloa","Eastern","0-04 yrs",930,0,4
+"194",25,2020,"Batticaloa","Eastern","05-09 yrs",1595,5,9
+"195",25,2020,"Batticaloa","Eastern","10-14 yrs",1940,10,14
+"196",25,2020,"Batticaloa","Eastern","15-19 yrs",1778,15,19
+"197",25,2020,"Batticaloa","Eastern","20-24 yrs",1120,20,24
+"198",25,2020,"Batticaloa","Eastern","25-49 yrs",2998,25,49
+"199",25,2020,"Batticaloa","Eastern","50-64 yrs",875,50,64
+"200",25,2020,"Batticaloa","Eastern","65-99 yrs",300,65,99
+"201",26,2021,"Batticaloa","Eastern","0-04 yrs",885,0,4
+"202",26,2021,"Batticaloa","Eastern","05-09 yrs",1272,5,9
+"203",26,2021,"Batticaloa","Eastern","10-14 yrs",1465,10,14
+"204",26,2021,"Batticaloa","Eastern","15-19 yrs",1208,15,19
+"205",26,2021,"Batticaloa","Eastern","20-24 yrs",850,20,24
+"206",26,2021,"Batticaloa","Eastern","25-49 yrs",2362,25,49
+"207",26,2021,"Batticaloa","Eastern","50-64 yrs",530,50,64
+"208",26,2021,"Batticaloa","Eastern","65-99 yrs",232,65,99
+"209",27,2022,"Batticaloa","Eastern","0-04 yrs",340,0,4
+"210",27,2022,"Batticaloa","Eastern","05-09 yrs",502,5,9
+"211",27,2022,"Batticaloa","Eastern","10-14 yrs",440,10,14
+"212",27,2022,"Batticaloa","Eastern","15-19 yrs",408,15,19
+"213",27,2022,"Batticaloa","Eastern","20-24 yrs",288,20,24
+"214",27,2022,"Batticaloa","Eastern","25-49 yrs",835,25,49
+"215",27,2022,"Batticaloa","Eastern","50-64 yrs",240,50,64
+"216",27,2022,"Batticaloa","Eastern","65-99 yrs",85,65,99
+"217",28,2023,"Batticaloa","Eastern","0-04 yrs",620,0,4
+"218",28,2023,"Batticaloa","Eastern","05-09 yrs",848,5,9
+"219",28,2023,"Batticaloa","Eastern","10-14 yrs",1002,10,14
+"220",28,2023,"Batticaloa","Eastern","15-19 yrs",1060,15,19
+"221",28,2023,"Batticaloa","Eastern","20-24 yrs",708,20,24
+"222",28,2023,"Batticaloa","Eastern","25-49 yrs",1930,25,49
+"223",28,2023,"Batticaloa","Eastern","50-64 yrs",578,50,64
+"224",28,2023,"Batticaloa","Eastern","65-99 yrs",230,65,99
+"225",29,2017,"Colombo","Western","0-04 yrs",7550,0,4
+"226",29,2017,"Colombo","Western","05-09 yrs",12822,5,9
+"227",29,2017,"Colombo","Western","10-14 yrs",13445,10,14
+"228",29,2017,"Colombo","Western","15-19 yrs",11450,15,19
+"229",29,2017,"Colombo","Western","20-24 yrs",13125,20,24
+"230",29,2017,"Colombo","Western","25-49 yrs",37098,25,49
+"231",29,2017,"Colombo","Western","50-64 yrs",10000,50,64
+"232",29,2017,"Colombo","Western","65-99 yrs",4962,65,99
+"233",30,2018,"Colombo","Western","0-04 yrs",2562,0,4
+"234",30,2018,"Colombo","Western","05-09 yrs",3575,5,9
+"235",30,2018,"Colombo","Western","10-14 yrs",3582,10,14
+"236",30,2018,"Colombo","Western","15-19 yrs",4005,15,19
+"237",30,2018,"Colombo","Western","20-24 yrs",4690,20,24
+"238",30,2018,"Colombo","Western","25-49 yrs",13085,25,49
+"239",30,2018,"Colombo","Western","50-64 yrs",3210,50,64
+"240",30,2018,"Colombo","Western","65-99 yrs",1338,65,99
+"241",31,2019,"Colombo","Western","0-04 yrs",5628,0,4
+"242",31,2019,"Colombo","Western","05-09 yrs",8032,5,9
+"243",31,2019,"Colombo","Western","10-14 yrs",8688,10,14
+"244",31,2019,"Colombo","Western","15-19 yrs",8632,15,19
+"245",31,2019,"Colombo","Western","20-24 yrs",8558,20,24
+"246",31,2019,"Colombo","Western","25-49 yrs",24140,25,49
+"247",31,2019,"Colombo","Western","50-64 yrs",5890,50,64
+"248",31,2019,"Colombo","Western","65-99 yrs",2780,65,99
+"249",32,2020,"Colombo","Western","0-04 yrs",1202,0,4
+"250",32,2020,"Colombo","Western","05-09 yrs",1368,5,9
+"251",32,2020,"Colombo","Western","10-14 yrs",1520,10,14
+"252",32,2020,"Colombo","Western","15-19 yrs",1588,15,19
+"253",32,2020,"Colombo","Western","20-24 yrs",2038,20,24
+"254",32,2020,"Colombo","Western","25-49 yrs",5512,25,49
+"255",32,2020,"Colombo","Western","50-64 yrs",1348,50,64
+"256",32,2020,"Colombo","Western","65-99 yrs",635,65,99
+"257",33,2021,"Colombo","Western","0-04 yrs",1670,0,4
+"258",33,2021,"Colombo","Western","05-09 yrs",2360,5,9
+"259",33,2021,"Colombo","Western","10-14 yrs",2878,10,14
+"260",33,2021,"Colombo","Western","15-19 yrs",2782,15,19
+"261",33,2021,"Colombo","Western","20-24 yrs",4198,20,24
+"262",33,2021,"Colombo","Western","25-49 yrs",12648,25,49
+"263",33,2021,"Colombo","Western","50-64 yrs",1935,50,64
+"264",33,2021,"Colombo","Western","65-99 yrs",695,65,99
+"265",34,2022,"Colombo","Western","0-04 yrs",2480,0,4
+"266",34,2022,"Colombo","Western","05-09 yrs",3540,5,9
+"267",34,2022,"Colombo","Western","10-14 yrs",4110,10,14
+"268",34,2022,"Colombo","Western","15-19 yrs",4972,15,19
+"269",34,2022,"Colombo","Western","20-24 yrs",5962,20,24
+"270",34,2022,"Colombo","Western","25-49 yrs",16780,25,49
+"271",34,2022,"Colombo","Western","50-64 yrs",3880,50,64
+"272",34,2022,"Colombo","Western","65-99 yrs",1915,65,99
+"273",35,2023,"Colombo","Western","0-04 yrs",2110,0,4
+"274",35,2023,"Colombo","Western","05-09 yrs",3222,5,9
+"275",35,2023,"Colombo","Western","10-14 yrs",4280,10,14
+"276",35,2023,"Colombo","Western","15-19 yrs",5940,15,19
+"277",35,2023,"Colombo","Western","20-24 yrs",6330,20,24
+"278",35,2023,"Colombo","Western","25-49 yrs",17000,25,49
+"279",35,2023,"Colombo","Western","50-64 yrs",4502,50,64
+"280",35,2023,"Colombo","Western","65-99 yrs",2220,65,99
+"281",36,2017,"Galle","Southern","0-04 yrs",330,0,4
+"282",36,2017,"Galle","Southern","05-09 yrs",545,5,9
+"283",36,2017,"Galle","Southern","10-14 yrs",1008,10,14
+"284",36,2017,"Galle","Southern","15-19 yrs",1645,15,19
+"285",36,2017,"Galle","Southern","20-24 yrs",2855,20,24
+"286",36,2017,"Galle","Southern","25-49 yrs",7818,25,49
+"287",36,2017,"Galle","Southern","50-64 yrs",2510,50,64
+"288",36,2017,"Galle","Southern","65-99 yrs",912,65,99
+"289",37,2018,"Galle","Southern","0-04 yrs",60,0,4
+"290",37,2018,"Galle","Southern","05-09 yrs",85,5,9
+"291",37,2018,"Galle","Southern","10-14 yrs",90,10,14
+"292",37,2018,"Galle","Southern","15-19 yrs",250,15,19
+"293",37,2018,"Galle","Southern","20-24 yrs",452,20,24
+"294",37,2018,"Galle","Southern","25-49 yrs",1218,25,49
+"295",37,2018,"Galle","Southern","50-64 yrs",322,50,64
+"296",37,2018,"Galle","Southern","65-99 yrs",122,65,99
+"297",38,2019,"Galle","Southern","0-04 yrs",548,0,4
+"298",38,2019,"Galle","Southern","05-09 yrs",970,5,9
+"299",38,2019,"Galle","Southern","10-14 yrs",1358,10,14
+"300",38,2019,"Galle","Southern","15-19 yrs",2388,15,19
+"301",38,2019,"Galle","Southern","20-24 yrs",2998,20,24
+"302",38,2019,"Galle","Southern","25-49 yrs",9018,25,49
+"303",38,2019,"Galle","Southern","50-64 yrs",3008,50,64
+"304",38,2019,"Galle","Southern","65-99 yrs",1258,65,99
+"305",39,2020,"Galle","Southern","0-04 yrs",95,0,4
+"306",39,2020,"Galle","Southern","05-09 yrs",52,5,9
+"307",39,2020,"Galle","Southern","10-14 yrs",148,10,14
+"308",39,2020,"Galle","Southern","15-19 yrs",325,15,19
+"309",39,2020,"Galle","Southern","20-24 yrs",392,20,24
+"310",39,2020,"Galle","Southern","25-49 yrs",1592,25,49
+"311",39,2020,"Galle","Southern","50-64 yrs",620,50,64
+"312",39,2020,"Galle","Southern","65-99 yrs",298,65,99
+"313",40,2021,"Galle","Southern","0-04 yrs",20,0,4
+"314",40,2021,"Galle","Southern","05-09 yrs",55,5,9
+"315",40,2021,"Galle","Southern","10-14 yrs",65,10,14
+"316",40,2021,"Galle","Southern","15-19 yrs",132,15,19
+"317",40,2021,"Galle","Southern","20-24 yrs",320,20,24
+"318",40,2021,"Galle","Southern","25-49 yrs",1035,25,49
+"319",40,2021,"Galle","Southern","50-64 yrs",185,50,64
+"320",40,2021,"Galle","Southern","65-99 yrs",48,65,99
+"321",41,2022,"Galle","Southern","0-04 yrs",220,0,4
+"322",41,2022,"Galle","Southern","05-09 yrs",345,5,9
+"323",41,2022,"Galle","Southern","10-14 yrs",482,10,14
+"324",41,2022,"Galle","Southern","15-19 yrs",885,15,19
+"325",41,2022,"Galle","Southern","20-24 yrs",1348,20,24
+"326",41,2022,"Galle","Southern","25-49 yrs",4205,25,49
+"327",41,2022,"Galle","Southern","50-64 yrs",1445,50,64
+"328",41,2022,"Galle","Southern","65-99 yrs",575,65,99
+"329",42,2023,"Galle","Southern","0-04 yrs",242,0,4
+"330",42,2023,"Galle","Southern","05-09 yrs",348,5,9
+"331",42,2023,"Galle","Southern","10-14 yrs",405,10,14
+"332",42,2023,"Galle","Southern","15-19 yrs",858,15,19
+"333",42,2023,"Galle","Southern","20-24 yrs",1465,20,24
+"334",42,2023,"Galle","Southern","25-49 yrs",4048,25,49
+"335",42,2023,"Galle","Southern","50-64 yrs",1300,50,64
+"336",42,2023,"Galle","Southern","65-99 yrs",548,65,99
+"337",43,2017,"Gampaha","Western","0-04 yrs",4738,0,4
+"338",43,2017,"Gampaha","Western","05-09 yrs",7832,5,9
+"339",43,2017,"Gampaha","Western","10-14 yrs",10302,10,14
+"340",43,2017,"Gampaha","Western","15-19 yrs",9870,15,19
+"341",43,2017,"Gampaha","Western","20-24 yrs",10268,20,24
+"342",43,2017,"Gampaha","Western","25-49 yrs",32385,25,49
+"343",43,2017,"Gampaha","Western","50-64 yrs",10590,50,64
+"344",43,2017,"Gampaha","Western","65-99 yrs",4640,65,99
+"345",44,2018,"Gampaha","Western","0-04 yrs",1422,0,4
+"346",44,2018,"Gampaha","Western","05-09 yrs",1405,5,9
+"347",44,2018,"Gampaha","Western","10-14 yrs",1295,10,14
+"348",44,2018,"Gampaha","Western","15-19 yrs",1665,15,19
+"349",44,2018,"Gampaha","Western","20-24 yrs",2142,20,24
+"350",44,2018,"Gampaha","Western","25-49 yrs",6362,25,49
+"351",44,2018,"Gampaha","Western","50-64 yrs",1825,50,64
+"352",44,2018,"Gampaha","Western","65-99 yrs",805,65,99
+"353",45,2019,"Gampaha","Western","0-04 yrs",3228,0,4
+"354",45,2019,"Gampaha","Western","05-09 yrs",4442,5,9
+"355",45,2019,"Gampaha","Western","10-14 yrs",4375,10,14
+"356",45,2019,"Gampaha","Western","15-19 yrs",5692,15,19
+"357",45,2019,"Gampaha","Western","20-24 yrs",5375,20,24
+"358",45,2019,"Gampaha","Western","25-49 yrs",16558,25,49
+"359",45,2019,"Gampaha","Western","50-64 yrs",4890,50,64
+"360",45,2019,"Gampaha","Western","65-99 yrs",1858,65,99
+"361",46,2020,"Gampaha","Western","0-04 yrs",702,0,4
+"362",46,2020,"Gampaha","Western","05-09 yrs",510,5,9
+"363",46,2020,"Gampaha","Western","10-14 yrs",512,10,14
+"364",46,2020,"Gampaha","Western","15-19 yrs",828,15,19
+"365",46,2020,"Gampaha","Western","20-24 yrs",820,20,24
+"366",46,2020,"Gampaha","Western","25-49 yrs",2978,25,49
+"367",46,2020,"Gampaha","Western","50-64 yrs",1060,50,64
+"368",46,2020,"Gampaha","Western","65-99 yrs",478,65,99
+"369",47,2021,"Gampaha","Western","0-04 yrs",860,0,4
+"370",47,2021,"Gampaha","Western","05-09 yrs",1162,5,9
+"371",47,2021,"Gampaha","Western","10-14 yrs",1680,10,14
+"372",47,2021,"Gampaha","Western","15-19 yrs",1762,15,19
+"373",47,2021,"Gampaha","Western","20-24 yrs",2038,20,24
+"374",47,2021,"Gampaha","Western","25-49 yrs",6808,25,49
+"375",47,2021,"Gampaha","Western","50-64 yrs",1688,50,64
+"376",47,2021,"Gampaha","Western","65-99 yrs",572,65,99
+"377",48,2022,"Gampaha","Western","0-04 yrs",1395,0,4
+"378",48,2022,"Gampaha","Western","05-09 yrs",1875,5,9
+"379",48,2022,"Gampaha","Western","10-14 yrs",2440,10,14
+"380",48,2022,"Gampaha","Western","15-19 yrs",3932,15,19
+"381",48,2022,"Gampaha","Western","20-24 yrs",4150,20,24
+"382",48,2022,"Gampaha","Western","25-49 yrs",13435,25,49
+"383",48,2022,"Gampaha","Western","50-64 yrs",4390,50,64
+"384",48,2022,"Gampaha","Western","65-99 yrs",1675,65,99
+"385",49,2023,"Gampaha","Western","0-04 yrs",1872,0,4
+"386",49,2023,"Gampaha","Western","05-09 yrs",2395,5,9
+"387",49,2023,"Gampaha","Western","10-14 yrs",3050,10,14
+"388",49,2023,"Gampaha","Western","15-19 yrs",4818,15,19
+"389",49,2023,"Gampaha","Western","20-24 yrs",5390,20,24
+"390",49,2023,"Gampaha","Western","25-49 yrs",15622,25,49
+"391",49,2023,"Gampaha","Western","50-64 yrs",5032,50,64
+"392",49,2023,"Gampaha","Western","65-99 yrs",2025,65,99
+"393",50,2017,"Hambantota","Southern","0-04 yrs",162,0,4
+"394",50,2017,"Hambantota","Southern","05-09 yrs",208,5,9
+"395",50,2017,"Hambantota","Southern","10-14 yrs",308,10,14
+"396",50,2017,"Hambantota","Southern","15-19 yrs",582,15,19
+"397",50,2017,"Hambantota","Southern","20-24 yrs",1308,20,24
+"398",50,2017,"Hambantota","Southern","25-49 yrs",3620,25,49
+"399",50,2017,"Hambantota","Southern","50-64 yrs",1305,50,64
+"400",50,2017,"Hambantota","Southern","65-99 yrs",420,65,99
+"401",51,2018,"Hambantota","Southern","0-04 yrs",58,0,4
+"402",51,2018,"Hambantota","Southern","05-09 yrs",68,5,9
+"403",51,2018,"Hambantota","Southern","10-14 yrs",102,10,14
+"404",51,2018,"Hambantota","Southern","15-19 yrs",205,15,19
+"405",51,2018,"Hambantota","Southern","20-24 yrs",340,20,24
+"406",51,2018,"Hambantota","Southern","25-49 yrs",948,25,49
+"407",51,2018,"Hambantota","Southern","50-64 yrs",292,50,64
+"408",51,2018,"Hambantota","Southern","65-99 yrs",162,65,99
+"409",52,2019,"Hambantota","Southern","0-04 yrs",120,0,4
+"410",52,2019,"Hambantota","Southern","05-09 yrs",182,5,9
+"411",52,2019,"Hambantota","Southern","10-14 yrs",218,10,14
+"412",52,2019,"Hambantota","Southern","15-19 yrs",425,15,19
+"413",52,2019,"Hambantota","Southern","20-24 yrs",728,20,24
+"414",52,2019,"Hambantota","Southern","25-49 yrs",1980,25,49
+"415",52,2019,"Hambantota","Southern","50-64 yrs",602,50,64
+"416",52,2019,"Hambantota","Southern","65-99 yrs",215,65,99
+"417",53,2020,"Hambantota","Southern","0-04 yrs",28,0,4
+"418",53,2020,"Hambantota","Southern","05-09 yrs",18,5,9
+"419",53,2020,"Hambantota","Southern","10-14 yrs",22,10,14
+"420",53,2020,"Hambantota","Southern","15-19 yrs",75,15,19
+"421",53,2020,"Hambantota","Southern","20-24 yrs",135,20,24
+"422",53,2020,"Hambantota","Southern","25-49 yrs",372,25,49
+"423",53,2020,"Hambantota","Southern","50-64 yrs",152,50,64
+"424",53,2020,"Hambantota","Southern","65-99 yrs",50,65,99
+"425",54,2021,"Hambantota","Southern","0-04 yrs",28,0,4
+"426",54,2021,"Hambantota","Southern","05-09 yrs",12,5,9
+"427",54,2021,"Hambantota","Southern","10-14 yrs",25,10,14
+"428",54,2021,"Hambantota","Southern","15-19 yrs",42,15,19
+"429",54,2021,"Hambantota","Southern","20-24 yrs",170,20,24
+"430",54,2021,"Hambantota","Southern","25-49 yrs",682,25,49
+"431",54,2021,"Hambantota","Southern","50-64 yrs",180,50,64
+"432",54,2021,"Hambantota","Southern","65-99 yrs",55,65,99
+"433",55,2022,"Hambantota","Southern","0-04 yrs",100,0,4
+"434",55,2022,"Hambantota","Southern","05-09 yrs",130,5,9
+"435",55,2022,"Hambantota","Southern","10-14 yrs",172,10,14
+"436",55,2022,"Hambantota","Southern","15-19 yrs",380,15,19
+"437",55,2022,"Hambantota","Southern","20-24 yrs",582,20,24
+"438",55,2022,"Hambantota","Southern","25-49 yrs",1618,25,49
+"439",55,2022,"Hambantota","Southern","50-64 yrs",452,50,64
+"440",55,2022,"Hambantota","Southern","65-99 yrs",162,65,99
+"441",56,2023,"Hambantota","Southern","0-04 yrs",95,0,4
+"442",56,2023,"Hambantota","Southern","05-09 yrs",112,5,9
+"443",56,2023,"Hambantota","Southern","10-14 yrs",205,10,14
+"444",56,2023,"Hambantota","Southern","15-19 yrs",382,15,19
+"445",56,2023,"Hambantota","Southern","20-24 yrs",475,20,24
+"446",56,2023,"Hambantota","Southern","25-49 yrs",1378,25,49
+"447",56,2023,"Hambantota","Southern","50-64 yrs",382,50,64
+"448",56,2023,"Hambantota","Southern","65-99 yrs",220,65,99
+"449",57,2017,"Jaffna","Northen","0-04 yrs",600,0,4
+"450",57,2017,"Jaffna","Northen","05-09 yrs",878,5,9
+"451",57,2017,"Jaffna","Northen","10-14 yrs",905,10,14
+"452",57,2017,"Jaffna","Northen","15-19 yrs",1258,15,19
+"453",57,2017,"Jaffna","Northen","20-24 yrs",1458,20,24
+"454",57,2017,"Jaffna","Northen","25-49 yrs",3232,25,49
+"455",57,2017,"Jaffna","Northen","50-64 yrs",722,50,64
+"456",57,2017,"Jaffna","Northen","65-99 yrs",398,65,99
+"457",58,2018,"Jaffna","Northen","0-04 yrs",690,0,4
+"458",58,2018,"Jaffna","Northen","05-09 yrs",838,5,9
+"459",58,2018,"Jaffna","Northen","10-14 yrs",875,10,14
+"460",58,2018,"Jaffna","Northen","15-19 yrs",1095,15,19
+"461",58,2018,"Jaffna","Northen","20-24 yrs",1170,20,24
+"462",58,2018,"Jaffna","Northen","25-49 yrs",2820,25,49
+"463",58,2018,"Jaffna","Northen","50-64 yrs",782,50,64
+"464",58,2018,"Jaffna","Northen","65-99 yrs",395,65,99
+"465",59,2019,"Jaffna","Northen","0-04 yrs",1325,0,4
+"466",59,2019,"Jaffna","Northen","05-09 yrs",1795,5,9
+"467",59,2019,"Jaffna","Northen","10-14 yrs",1505,10,14
+"468",59,2019,"Jaffna","Northen","15-19 yrs",2018,15,19
+"469",59,2019,"Jaffna","Northen","20-24 yrs",2365,20,24
+"470",59,2019,"Jaffna","Northen","25-49 yrs",5338,25,49
+"471",59,2019,"Jaffna","Northen","50-64 yrs",1508,50,64
+"472",59,2019,"Jaffna","Northen","65-99 yrs",718,65,99
+"473",60,2020,"Jaffna","Northen","0-04 yrs",398,0,4
+"474",60,2020,"Jaffna","Northen","05-09 yrs",360,5,9
+"475",60,2020,"Jaffna","Northen","10-14 yrs",428,10,14
+"476",60,2020,"Jaffna","Northen","15-19 yrs",412,15,19
+"477",60,2020,"Jaffna","Northen","20-24 yrs",542,20,24
+"478",60,2020,"Jaffna","Northen","25-49 yrs",1690,25,49
+"479",60,2020,"Jaffna","Northen","50-64 yrs",585,50,64
+"480",60,2020,"Jaffna","Northen","65-99 yrs",335,65,99
+"481",61,2021,"Jaffna","Northen","0-04 yrs",60,0,4
+"482",61,2021,"Jaffna","Northen","05-09 yrs",38,5,9
+"483",61,2021,"Jaffna","Northen","10-14 yrs",58,10,14
+"484",61,2021,"Jaffna","Northen","15-19 yrs",48,15,19
+"485",61,2021,"Jaffna","Northen","20-24 yrs",62,20,24
+"486",61,2021,"Jaffna","Northen","25-49 yrs",195,25,49
+"487",61,2021,"Jaffna","Northen","50-64 yrs",52,50,64
+"488",61,2021,"Jaffna","Northen","65-99 yrs",22,65,99
+"489",62,2022,"Jaffna","Northen","0-04 yrs",842,0,4
+"490",62,2022,"Jaffna","Northen","05-09 yrs",832,5,9
+"491",62,2022,"Jaffna","Northen","10-14 yrs",755,10,14
+"492",62,2022,"Jaffna","Northen","15-19 yrs",922,15,19
+"493",62,2022,"Jaffna","Northen","20-24 yrs",1070,20,24
+"494",62,2022,"Jaffna","Northen","25-49 yrs",2970,25,49
+"495",62,2022,"Jaffna","Northen","50-64 yrs",742,50,64
+"496",62,2022,"Jaffna","Northen","65-99 yrs",390,65,99
+"497",63,2023,"Jaffna","Northen","0-04 yrs",1025,0,4
+"498",63,2023,"Jaffna","Northen","05-09 yrs",958,5,9
+"499",63,2023,"Jaffna","Northen","10-14 yrs",848,10,14
+"500",63,2023,"Jaffna","Northen","15-19 yrs",1140,15,19
+"501",63,2023,"Jaffna","Northen","20-24 yrs",1592,20,24
+"502",63,2023,"Jaffna","Northen","25-49 yrs",3718,25,49
+"503",63,2023,"Jaffna","Northen","50-64 yrs",1010,50,64
+"504",63,2023,"Jaffna","Northen","65-99 yrs",492,65,99
+"505",64,2017,"Kaluthara","Western","0-04 yrs",880,0,4
+"506",64,2017,"Kaluthara","Western","05-09 yrs",1210,5,9
+"507",64,2017,"Kaluthara","Western","10-14 yrs",1888,10,14
+"508",64,2017,"Kaluthara","Western","15-19 yrs",2698,15,19
+"509",64,2017,"Kaluthara","Western","20-24 yrs",3372,20,24
+"510",64,2017,"Kaluthara","Western","25-49 yrs",10832,25,49
+"511",64,2017,"Kaluthara","Western","50-64 yrs",3790,50,64
+"512",64,2017,"Kaluthara","Western","65-99 yrs",1598,65,99
+"513",65,2018,"Kaluthara","Western","0-04 yrs",312,0,4
+"514",65,2018,"Kaluthara","Western","05-09 yrs",358,5,9
+"515",65,2018,"Kaluthara","Western","10-14 yrs",410,10,14
+"516",65,2018,"Kaluthara","Western","15-19 yrs",808,15,19
+"517",65,2018,"Kaluthara","Western","20-24 yrs",1125,20,24
+"518",65,2018,"Kaluthara","Western","25-49 yrs",3242,25,49
+"519",65,2018,"Kaluthara","Western","50-64 yrs",935,50,64
+"520",65,2018,"Kaluthara","Western","65-99 yrs",400,65,99
+"521",66,2019,"Kaluthara","Western","0-04 yrs",855,0,4
+"522",66,2019,"Kaluthara","Western","05-09 yrs",1120,5,9
+"523",66,2019,"Kaluthara","Western","10-14 yrs",1408,10,14
+"524",66,2019,"Kaluthara","Western","15-19 yrs",2690,15,19
+"525",66,2019,"Kaluthara","Western","20-24 yrs",2825,20,24
+"526",66,2019,"Kaluthara","Western","25-49 yrs",9118,25,49
+"527",66,2019,"Kaluthara","Western","50-64 yrs",2738,50,64
+"528",66,2019,"Kaluthara","Western","65-99 yrs",1058,65,99
+"529",67,2020,"Kaluthara","Western","0-04 yrs",245,0,4
+"530",67,2020,"Kaluthara","Western","05-09 yrs",168,5,9
+"531",67,2020,"Kaluthara","Western","10-14 yrs",250,10,14
+"532",67,2020,"Kaluthara","Western","15-19 yrs",408,15,19
+"533",67,2020,"Kaluthara","Western","20-24 yrs",582,20,24
+"534",67,2020,"Kaluthara","Western","25-49 yrs",1912,25,49
+"535",67,2020,"Kaluthara","Western","50-64 yrs",610,50,64
+"536",67,2020,"Kaluthara","Western","65-99 yrs",278,65,99
+"537",68,2021,"Kaluthara","Western","0-04 yrs",280,0,4
+"538",68,2021,"Kaluthara","Western","05-09 yrs",252,5,9
+"539",68,2021,"Kaluthara","Western","10-14 yrs",365,10,14
+"540",68,2021,"Kaluthara","Western","15-19 yrs",742,15,19
+"541",68,2021,"Kaluthara","Western","20-24 yrs",990,20,24
+"542",68,2021,"Kaluthara","Western","25-49 yrs",3392,25,49
+"543",68,2021,"Kaluthara","Western","50-64 yrs",935,50,64
+"544",68,2021,"Kaluthara","Western","65-99 yrs",298,65,99
+"545",69,2022,"Kaluthara","Western","0-04 yrs",518,0,4
+"546",69,2022,"Kaluthara","Western","05-09 yrs",670,5,9
+"547",69,2022,"Kaluthara","Western","10-14 yrs",860,10,14
+"548",69,2022,"Kaluthara","Western","15-19 yrs",1748,15,19
+"549",69,2022,"Kaluthara","Western","20-24 yrs",2070,20,24
+"550",69,2022,"Kaluthara","Western","25-49 yrs",6895,25,49
+"551",69,2022,"Kaluthara","Western","50-64 yrs",2158,50,64
+"552",69,2022,"Kaluthara","Western","65-99 yrs",795,65,99
+"553",70,2023,"Kaluthara","Western","0-04 yrs",525,0,4
+"554",70,2023,"Kaluthara","Western","05-09 yrs",685,5,9
+"555",70,2023,"Kaluthara","Western","10-14 yrs",750,10,14
+"556",70,2023,"Kaluthara","Western","15-19 yrs",1445,15,19
+"557",70,2023,"Kaluthara","Western","20-24 yrs",1828,20,24
+"558",70,2023,"Kaluthara","Western","25-49 yrs",5182,25,49
+"559",70,2023,"Kaluthara","Western","50-64 yrs",1600,50,64
+"560",70,2023,"Kaluthara","Western","65-99 yrs",698,65,99
+"561",71,2017,"Kandy","Central","0-04 yrs",1408,0,4
+"562",71,2017,"Kandy","Central","05-09 yrs",2845,5,9
+"563",71,2017,"Kandy","Central","10-14 yrs",4498,10,14
+"564",71,2017,"Kandy","Central","15-19 yrs",5562,15,19
+"565",71,2017,"Kandy","Central","20-24 yrs",5058,20,24
+"566",71,2017,"Kandy","Central","25-49 yrs",14302,25,49
+"567",71,2017,"Kandy","Central","50-64 yrs",4752,50,64
+"568",71,2017,"Kandy","Central","65-99 yrs",1808,65,99
+"569",72,2018,"Kandy","Central","0-04 yrs",355,0,4
+"570",72,2018,"Kandy","Central","05-09 yrs",670,5,9
+"571",72,2018,"Kandy","Central","10-14 yrs",780,10,14
+"572",72,2018,"Kandy","Central","15-19 yrs",1355,15,19
+"573",72,2018,"Kandy","Central","20-24 yrs",1368,20,24
+"574",72,2018,"Kandy","Central","25-49 yrs",3975,25,49
+"575",72,2018,"Kandy","Central","50-64 yrs",1878,50,64
+"576",72,2018,"Kandy","Central","65-99 yrs",852,65,99
+"577",73,2019,"Kandy","Central","0-04 yrs",1112,0,4
+"578",73,2019,"Kandy","Central","05-09 yrs",1875,5,9
+"579",73,2019,"Kandy","Central","10-14 yrs",2328,10,14
+"580",73,2019,"Kandy","Central","15-19 yrs",3388,15,19
+"581",73,2019,"Kandy","Central","20-24 yrs",3412,20,24
+"582",73,2019,"Kandy","Central","25-49 yrs",8830,25,49
+"583",73,2019,"Kandy","Central","50-64 yrs",3495,50,64
+"584",73,2019,"Kandy","Central","65-99 yrs",1532,65,99
+"585",74,2020,"Kandy","Central","0-04 yrs",400,0,4
+"586",74,2020,"Kandy","Central","05-09 yrs",575,5,9
+"587",74,2020,"Kandy","Central","10-14 yrs",688,10,14
+"588",74,2020,"Kandy","Central","15-19 yrs",1125,15,19
+"589",74,2020,"Kandy","Central","20-24 yrs",1128,20,24
+"590",74,2020,"Kandy","Central","25-49 yrs",4010,25,49
+"591",74,2020,"Kandy","Central","50-64 yrs",1590,50,64
+"592",74,2020,"Kandy","Central","65-99 yrs",695,65,99
+"593",75,2021,"Kandy","Central","0-04 yrs",92,0,4
+"594",75,2021,"Kandy","Central","05-09 yrs",65,5,9
+"595",75,2021,"Kandy","Central","10-14 yrs",112,10,14
+"596",75,2021,"Kandy","Central","15-19 yrs",258,15,19
+"597",75,2021,"Kandy","Central","20-24 yrs",430,20,24
+"598",75,2021,"Kandy","Central","25-49 yrs",1830,25,49
+"599",75,2021,"Kandy","Central","50-64 yrs",700,50,64
+"600",75,2021,"Kandy","Central","65-99 yrs",322,65,99
+"601",76,2022,"Kandy","Central","0-04 yrs",582,0,4
+"602",76,2022,"Kandy","Central","05-09 yrs",1070,5,9
+"603",76,2022,"Kandy","Central","10-14 yrs",1512,10,14
+"604",76,2022,"Kandy","Central","15-19 yrs",2015,15,19
+"605",76,2022,"Kandy","Central","20-24 yrs",2090,20,24
+"606",76,2022,"Kandy","Central","25-49 yrs",5955,25,49
+"607",76,2022,"Kandy","Central","50-64 yrs",2075,50,64
+"608",76,2022,"Kandy","Central","65-99 yrs",868,65,99
+"609",77,2023,"Kandy","Central","0-04 yrs",882,0,4
+"610",77,2023,"Kandy","Central","05-09 yrs",1500,5,9
+"611",77,2023,"Kandy","Central","10-14 yrs",2088,10,14
+"612",77,2023,"Kandy","Central","15-19 yrs",2798,15,19
+"613",77,2023,"Kandy","Central","20-24 yrs",2820,20,24
+"614",77,2023,"Kandy","Central","25-49 yrs",7525,25,49
+"615",77,2023,"Kandy","Central","50-64 yrs",2782,50,64
+"616",77,2023,"Kandy","Central","65-99 yrs",1215,65,99
+"617",78,2017,"Kegalle","Sabaragamuwa","0-04 yrs",600,0,4
+"618",78,2017,"Kegalle","Sabaragamuwa","05-09 yrs",832,5,9
+"619",78,2017,"Kegalle","Sabaragamuwa","10-14 yrs",1215,10,14
+"620",78,2017,"Kegalle","Sabaragamuwa","15-19 yrs",1502,15,19
+"621",78,2017,"Kegalle","Sabaragamuwa","20-24 yrs",1982,20,24
+"622",78,2017,"Kegalle","Sabaragamuwa","25-49 yrs",7995,25,49
+"623",78,2017,"Kegalle","Sabaragamuwa","50-64 yrs",3865,50,64
+"624",78,2017,"Kegalle","Sabaragamuwa","65-99 yrs",1625,65,99
+"625",79,2018,"Kegalle","Sabaragamuwa","0-04 yrs",222,0,4
+"626",79,2018,"Kegalle","Sabaragamuwa","05-09 yrs",265,5,9
+"627",79,2018,"Kegalle","Sabaragamuwa","10-14 yrs",232,10,14
+"628",79,2018,"Kegalle","Sabaragamuwa","15-19 yrs",322,15,19
+"629",79,2018,"Kegalle","Sabaragamuwa","20-24 yrs",485,20,24
+"630",79,2018,"Kegalle","Sabaragamuwa","25-49 yrs",1490,25,49
+"631",79,2018,"Kegalle","Sabaragamuwa","50-64 yrs",685,50,64
+"632",79,2018,"Kegalle","Sabaragamuwa","65-99 yrs",318,65,99
+"633",80,2019,"Kegalle","Sabaragamuwa","0-04 yrs",320,0,4
+"634",80,2019,"Kegalle","Sabaragamuwa","05-09 yrs",442,5,9
+"635",80,2019,"Kegalle","Sabaragamuwa","10-14 yrs",438,10,14
+"636",80,2019,"Kegalle","Sabaragamuwa","15-19 yrs",618,15,19
+"637",80,2019,"Kegalle","Sabaragamuwa","20-24 yrs",770,20,24
+"638",80,2019,"Kegalle","Sabaragamuwa","25-49 yrs",2675,25,49
+"639",80,2019,"Kegalle","Sabaragamuwa","50-64 yrs",980,50,64
+"640",80,2019,"Kegalle","Sabaragamuwa","65-99 yrs",465,65,99
+"641",81,2020,"Kegalle","Sabaragamuwa","0-04 yrs",140,0,4
+"642",81,2020,"Kegalle","Sabaragamuwa","05-09 yrs",108,5,9
+"643",81,2020,"Kegalle","Sabaragamuwa","10-14 yrs",102,10,14
+"644",81,2020,"Kegalle","Sabaragamuwa","15-19 yrs",152,15,19
+"645",81,2020,"Kegalle","Sabaragamuwa","20-24 yrs",210,20,24
+"646",81,2020,"Kegalle","Sabaragamuwa","25-49 yrs",818,25,49
+"647",81,2020,"Kegalle","Sabaragamuwa","50-64 yrs",420,50,64
+"648",81,2020,"Kegalle","Sabaragamuwa","65-99 yrs",198,65,99
+"649",82,2021,"Kegalle","Sabaragamuwa","0-04 yrs",62,0,4
+"650",82,2021,"Kegalle","Sabaragamuwa","05-09 yrs",35,5,9
+"651",82,2021,"Kegalle","Sabaragamuwa","10-14 yrs",58,10,14
+"652",82,2021,"Kegalle","Sabaragamuwa","15-19 yrs",135,15,19
+"653",82,2021,"Kegalle","Sabaragamuwa","20-24 yrs",262,20,24
+"654",82,2021,"Kegalle","Sabaragamuwa","25-49 yrs",985,25,49
+"655",82,2021,"Kegalle","Sabaragamuwa","50-64 yrs",285,50,64
+"656",82,2021,"Kegalle","Sabaragamuwa","65-99 yrs",130,65,99
+"657",83,2022,"Kegalle","Sabaragamuwa","0-04 yrs",230,0,4
+"658",83,2022,"Kegalle","Sabaragamuwa","05-09 yrs",440,5,9
+"659",83,2022,"Kegalle","Sabaragamuwa","10-14 yrs",505,10,14
+"660",83,2022,"Kegalle","Sabaragamuwa","15-19 yrs",758,15,19
+"661",83,2022,"Kegalle","Sabaragamuwa","20-24 yrs",900,20,24
+"662",83,2022,"Kegalle","Sabaragamuwa","25-49 yrs",3188,25,49
+"663",83,2022,"Kegalle","Sabaragamuwa","50-64 yrs",1250,50,64
+"664",83,2022,"Kegalle","Sabaragamuwa","65-99 yrs",485,65,99
+"665",84,2023,"Kegalle","Sabaragamuwa","0-04 yrs",298,0,4
+"666",84,2023,"Kegalle","Sabaragamuwa","05-09 yrs",390,5,9
+"667",84,2023,"Kegalle","Sabaragamuwa","10-14 yrs",440,10,14
+"668",84,2023,"Kegalle","Sabaragamuwa","15-19 yrs",635,15,19
+"669",84,2023,"Kegalle","Sabaragamuwa","20-24 yrs",1035,20,24
+"670",84,2023,"Kegalle","Sabaragamuwa","25-49 yrs",3530,25,49
+"671",84,2023,"Kegalle","Sabaragamuwa","50-64 yrs",1585,50,64
+"672",84,2023,"Kegalle","Sabaragamuwa","65-99 yrs",770,65,99
+"673",85,2017,"Kilinochchi","Northen","0-04 yrs",40,0,4
+"674",85,2017,"Kilinochchi","Northen","05-09 yrs",52,5,9
+"675",85,2017,"Kilinochchi","Northen","10-14 yrs",55,10,14
+"676",85,2017,"Kilinochchi","Northen","15-19 yrs",112,15,19
+"677",85,2017,"Kilinochchi","Northen","20-24 yrs",205,20,24
+"678",85,2017,"Kilinochchi","Northen","25-49 yrs",472,25,49
+"679",85,2017,"Kilinochchi","Northen","50-64 yrs",55,50,64
+"680",85,2017,"Kilinochchi","Northen","65-99 yrs",25,65,99
+"681",86,2018,"Kilinochchi","Northen","0-04 yrs",10,0,4
+"682",86,2018,"Kilinochchi","Northen","05-09 yrs",10,5,9
+"683",86,2018,"Kilinochchi","Northen","10-14 yrs",12,10,14
+"684",86,2018,"Kilinochchi","Northen","15-19 yrs",82,15,19
+"685",86,2018,"Kilinochchi","Northen","20-24 yrs",152,20,24
+"686",86,2018,"Kilinochchi","Northen","25-49 yrs",305,25,49
+"687",86,2018,"Kilinochchi","Northen","50-64 yrs",45,50,64
+"688",86,2018,"Kilinochchi","Northen","65-99 yrs",8,65,99
+"689",87,2019,"Kilinochchi","Northen","0-04 yrs",40,0,4
+"690",87,2019,"Kilinochchi","Northen","05-09 yrs",65,5,9
+"691",87,2019,"Kilinochchi","Northen","10-14 yrs",42,10,14
+"692",87,2019,"Kilinochchi","Northen","15-19 yrs",75,15,19
+"693",87,2019,"Kilinochchi","Northen","20-24 yrs",170,20,24
+"694",87,2019,"Kilinochchi","Northen","25-49 yrs",285,25,49
+"695",87,2019,"Kilinochchi","Northen","50-64 yrs",70,50,64
+"696",87,2019,"Kilinochchi","Northen","65-99 yrs",20,65,99
+"697",88,2020,"Kilinochchi","Northen","0-04 yrs",22,0,4
+"698",88,2020,"Kilinochchi","Northen","05-09 yrs",22,5,9
+"699",88,2020,"Kilinochchi","Northen","10-14 yrs",12,10,14
+"700",88,2020,"Kilinochchi","Northen","15-19 yrs",10,15,19
+"701",88,2020,"Kilinochchi","Northen","20-24 yrs",25,20,24
+"702",88,2020,"Kilinochchi","Northen","25-49 yrs",62,25,49
+"703",88,2020,"Kilinochchi","Northen","50-64 yrs",18,50,64
+"704",88,2020,"Kilinochchi","Northen","65-99 yrs",18,65,99
+"705",89,2021,"Kilinochchi","Northen","0-04 yrs",0,0,4
+"706",89,2021,"Kilinochchi","Northen","05-09 yrs",0,5,9
+"707",89,2021,"Kilinochchi","Northen","10-14 yrs",2,10,14
+"708",89,2021,"Kilinochchi","Northen","15-19 yrs",8,15,19
+"709",89,2021,"Kilinochchi","Northen","20-24 yrs",15,20,24
+"710",89,2021,"Kilinochchi","Northen","25-49 yrs",28,25,49
+"711",89,2021,"Kilinochchi","Northen","50-64 yrs",15,50,64
+"712",89,2021,"Kilinochchi","Northen","65-99 yrs",8,65,99
+"713",90,2022,"Kilinochchi","Northen","0-04 yrs",15,0,4
+"714",90,2022,"Kilinochchi","Northen","05-09 yrs",2,5,9
+"715",90,2022,"Kilinochchi","Northen","10-14 yrs",10,10,14
+"716",90,2022,"Kilinochchi","Northen","15-19 yrs",25,15,19
+"717",90,2022,"Kilinochchi","Northen","20-24 yrs",65,20,24
+"718",90,2022,"Kilinochchi","Northen","25-49 yrs",198,25,49
+"719",90,2022,"Kilinochchi","Northen","50-64 yrs",15,50,64
+"720",90,2022,"Kilinochchi","Northen","65-99 yrs",18,65,99
+"721",91,2023,"Kilinochchi","Northen","0-04 yrs",8,0,4
+"722",91,2023,"Kilinochchi","Northen","05-09 yrs",8,5,9
+"723",91,2023,"Kilinochchi","Northen","10-14 yrs",18,10,14
+"724",91,2023,"Kilinochchi","Northen","15-19 yrs",35,15,19
+"725",91,2023,"Kilinochchi","Northen","20-24 yrs",58,20,24
+"726",91,2023,"Kilinochchi","Northen","25-49 yrs",122,25,49
+"727",91,2023,"Kilinochchi","Northen","50-64 yrs",10,50,64
+"728",91,2023,"Kilinochchi","Northen","65-99 yrs",20,65,99
+"729",92,2017,"Kurunegala","North_Western","0-04 yrs",560,0,4
+"730",92,2017,"Kurunegala","North_Western","05-09 yrs",960,5,9
+"731",92,2017,"Kurunegala","North_Western","10-14 yrs",1560,10,14
+"732",92,2017,"Kurunegala","North_Western","15-19 yrs",1728,15,19
+"733",92,2017,"Kurunegala","North_Western","20-24 yrs",2450,20,24
+"734",92,2017,"Kurunegala","North_Western","25-49 yrs",7942,25,49
+"735",92,2017,"Kurunegala","North_Western","50-64 yrs",2940,50,64
+"736",92,2017,"Kurunegala","North_Western","65-99 yrs",1062,65,99
+"737",93,2018,"Kurunegala","North_Western","0-04 yrs",172,0,4
+"738",93,2018,"Kurunegala","North_Western","05-09 yrs",215,5,9
+"739",93,2018,"Kurunegala","North_Western","10-14 yrs",228,10,14
+"740",93,2018,"Kurunegala","North_Western","15-19 yrs",278,15,19
+"741",93,2018,"Kurunegala","North_Western","20-24 yrs",545,20,24
+"742",93,2018,"Kurunegala","North_Western","25-49 yrs",2100,25,49
+"743",93,2018,"Kurunegala","North_Western","50-64 yrs",635,50,64
+"744",93,2018,"Kurunegala","North_Western","65-99 yrs",200,65,99
+"745",94,2019,"Kurunegala","North_Western","0-04 yrs",285,0,4
+"746",94,2019,"Kurunegala","North_Western","05-09 yrs",310,5,9
+"747",94,2019,"Kurunegala","North_Western","10-14 yrs",310,10,14
+"748",94,2019,"Kurunegala","North_Western","15-19 yrs",528,15,19
+"749",94,2019,"Kurunegala","North_Western","20-24 yrs",1102,20,24
+"750",94,2019,"Kurunegala","North_Western","25-49 yrs",3205,25,49
+"751",94,2019,"Kurunegala","North_Western","50-64 yrs",1088,50,64
+"752",94,2019,"Kurunegala","North_Western","65-99 yrs",358,65,99
+"753",95,2020,"Kurunegala","North_Western","0-04 yrs",65,0,4
+"754",95,2020,"Kurunegala","North_Western","05-09 yrs",85,5,9
+"755",95,2020,"Kurunegala","North_Western","10-14 yrs",92,10,14
+"756",95,2020,"Kurunegala","North_Western","15-19 yrs",145,15,19
+"757",95,2020,"Kurunegala","North_Western","20-24 yrs",260,20,24
+"758",95,2020,"Kurunegala","North_Western","25-49 yrs",948,25,49
+"759",95,2020,"Kurunegala","North_Western","50-64 yrs",345,50,64
+"760",95,2020,"Kurunegala","North_Western","65-99 yrs",150,65,99
+"761",96,2021,"Kurunegala","North_Western","0-04 yrs",205,0,4
+"762",96,2021,"Kurunegala","North_Western","05-09 yrs",172,5,9
+"763",96,2021,"Kurunegala","North_Western","10-14 yrs",245,10,14
+"764",96,2021,"Kurunegala","North_Western","15-19 yrs",332,15,19
+"765",96,2021,"Kurunegala","North_Western","20-24 yrs",682,20,24
+"766",96,2021,"Kurunegala","North_Western","25-49 yrs",2258,25,49
+"767",96,2021,"Kurunegala","North_Western","50-64 yrs",612,50,64
+"768",96,2021,"Kurunegala","North_Western","65-99 yrs",168,65,99
+"769",97,2022,"Kurunegala","North_Western","0-04 yrs",135,0,4
+"770",97,2022,"Kurunegala","North_Western","05-09 yrs",190,5,9
+"771",97,2022,"Kurunegala","North_Western","10-14 yrs",318,10,14
+"772",97,2022,"Kurunegala","North_Western","15-19 yrs",412,15,19
+"773",97,2022,"Kurunegala","North_Western","20-24 yrs",888,20,24
+"774",97,2022,"Kurunegala","North_Western","25-49 yrs",3088,25,49
+"775",97,2022,"Kurunegala","North_Western","50-64 yrs",898,50,64
+"776",97,2022,"Kurunegala","North_Western","65-99 yrs",342,65,99
+"777",98,2023,"Kurunegala","North_Western","0-04 yrs",178,0,4
+"778",98,2023,"Kurunegala","North_Western","05-09 yrs",262,5,9
+"779",98,2023,"Kurunegala","North_Western","10-14 yrs",410,10,14
+"780",98,2023,"Kurunegala","North_Western","15-19 yrs",642,15,19
+"781",98,2023,"Kurunegala","North_Western","20-24 yrs",1475,20,24
+"782",98,2023,"Kurunegala","North_Western","25-49 yrs",3785,25,49
+"783",98,2023,"Kurunegala","North_Western","50-64 yrs",1220,50,64
+"784",98,2023,"Kurunegala","North_Western","65-99 yrs",390,65,99
+"785",99,2017,"Mannar","Northen","0-04 yrs",95,0,4
+"786",99,2017,"Mannar","Northen","05-09 yrs",168,5,9
+"787",99,2017,"Mannar","Northen","10-14 yrs",188,10,14
+"788",99,2017,"Mannar","Northen","15-19 yrs",228,15,19
+"789",99,2017,"Mannar","Northen","20-24 yrs",148,20,24
+"790",99,2017,"Mannar","Northen","25-49 yrs",412,25,49
+"791",99,2017,"Mannar","Northen","50-64 yrs",85,50,64
+"792",99,2017,"Mannar","Northen","65-99 yrs",35,65,99
+"793",100,2018,"Mannar","Northen","0-04 yrs",20,0,4
+"794",100,2018,"Mannar","Northen","05-09 yrs",65,5,9
+"795",100,2018,"Mannar","Northen","10-14 yrs",55,10,14
+"796",100,2018,"Mannar","Northen","15-19 yrs",98,15,19
+"797",100,2018,"Mannar","Northen","20-24 yrs",90,20,24
+"798",100,2018,"Mannar","Northen","25-49 yrs",152,25,49
+"799",100,2018,"Mannar","Northen","50-64 yrs",38,50,64
+"800",100,2018,"Mannar","Northen","65-99 yrs",22,65,99
+"801",101,2019,"Mannar","Northen","0-04 yrs",58,0,4
+"802",101,2019,"Mannar","Northen","05-09 yrs",92,5,9
+"803",101,2019,"Mannar","Northen","10-14 yrs",70,10,14
+"804",101,2019,"Mannar","Northen","15-19 yrs",98,15,19
+"805",101,2019,"Mannar","Northen","20-24 yrs",105,20,24
+"806",101,2019,"Mannar","Northen","25-49 yrs",192,25,49
+"807",101,2019,"Mannar","Northen","50-64 yrs",50,50,64
+"808",101,2019,"Mannar","Northen","65-99 yrs",28,65,99
+"809",102,2020,"Mannar","Northen","0-04 yrs",38,0,4
+"810",102,2020,"Mannar","Northen","05-09 yrs",12,5,9
+"811",102,2020,"Mannar","Northen","10-14 yrs",35,10,14
+"812",102,2020,"Mannar","Northen","15-19 yrs",42,15,19
+"813",102,2020,"Mannar","Northen","20-24 yrs",52,20,24
+"814",102,2020,"Mannar","Northen","25-49 yrs",105,25,49
+"815",102,2020,"Mannar","Northen","50-64 yrs",25,50,64
+"816",102,2020,"Mannar","Northen","65-99 yrs",15,65,99
+"817",103,2021,"Mannar","Northen","0-04 yrs",70,0,4
+"818",103,2021,"Mannar","Northen","05-09 yrs",75,5,9
+"819",103,2021,"Mannar","Northen","10-14 yrs",132,10,14
+"820",103,2021,"Mannar","Northen","15-19 yrs",138,15,19
+"821",103,2021,"Mannar","Northen","20-24 yrs",90,20,24
+"822",103,2021,"Mannar","Northen","25-49 yrs",315,25,49
+"823",103,2021,"Mannar","Northen","50-64 yrs",48,50,64
+"824",103,2021,"Mannar","Northen","65-99 yrs",32,65,99
+"825",104,2022,"Mannar","Northen","0-04 yrs",30,0,4
+"826",104,2022,"Mannar","Northen","05-09 yrs",48,5,9
+"827",104,2022,"Mannar","Northen","10-14 yrs",60,10,14
+"828",104,2022,"Mannar","Northen","15-19 yrs",88,15,19
+"829",104,2022,"Mannar","Northen","20-24 yrs",80,20,24
+"830",104,2022,"Mannar","Northen","25-49 yrs",292,25,49
+"831",104,2022,"Mannar","Northen","50-64 yrs",78,50,64
+"832",104,2022,"Mannar","Northen","65-99 yrs",30,65,99
+"833",105,2023,"Mannar","Northen","0-04 yrs",18,0,4
+"834",105,2023,"Mannar","Northen","05-09 yrs",38,5,9
+"835",105,2023,"Mannar","Northen","10-14 yrs",28,10,14
+"836",105,2023,"Mannar","Northen","15-19 yrs",65,15,19
+"837",105,2023,"Mannar","Northen","20-24 yrs",100,20,24
+"838",105,2023,"Mannar","Northen","25-49 yrs",175,25,49
+"839",105,2023,"Mannar","Northen","50-64 yrs",60,50,64
+"840",105,2023,"Mannar","Northen","65-99 yrs",28,65,99
+"841",106,2017,"Matale","Central","0-04 yrs",275,0,4
+"842",106,2017,"Matale","Central","05-09 yrs",438,5,9
+"843",106,2017,"Matale","Central","10-14 yrs",695,10,14
+"844",106,2017,"Matale","Central","15-19 yrs",822,15,19
+"845",106,2017,"Matale","Central","20-24 yrs",698,20,24
+"846",106,2017,"Matale","Central","25-49 yrs",2082,25,49
+"847",106,2017,"Matale","Central","50-64 yrs",678,50,64
+"848",106,2017,"Matale","Central","65-99 yrs",238,65,99
+"849",107,2018,"Matale","Central","0-04 yrs",118,0,4
+"850",107,2018,"Matale","Central","05-09 yrs",138,5,9
+"851",107,2018,"Matale","Central","10-14 yrs",162,10,14
+"852",107,2018,"Matale","Central","15-19 yrs",202,15,19
+"853",107,2018,"Matale","Central","20-24 yrs",182,20,24
+"854",107,2018,"Matale","Central","25-49 yrs",648,25,49
+"855",107,2018,"Matale","Central","50-64 yrs",210,50,64
+"856",107,2018,"Matale","Central","65-99 yrs",98,65,99
+"857",108,2019,"Matale","Central","0-04 yrs",452,0,4
+"858",108,2019,"Matale","Central","05-09 yrs",652,5,9
+"859",108,2019,"Matale","Central","10-14 yrs",738,10,14
+"860",108,2019,"Matale","Central","15-19 yrs",782,15,19
+"861",108,2019,"Matale","Central","20-24 yrs",710,20,24
+"862",108,2019,"Matale","Central","25-49 yrs",2078,25,49
+"863",108,2019,"Matale","Central","50-64 yrs",650,50,64
+"864",108,2019,"Matale","Central","65-99 yrs",208,65,99
+"865",109,2020,"Matale","Central","0-04 yrs",205,0,4
+"866",109,2020,"Matale","Central","05-09 yrs",140,5,9
+"867",109,2020,"Matale","Central","10-14 yrs",132,10,14
+"868",109,2020,"Matale","Central","15-19 yrs",130,15,19
+"869",109,2020,"Matale","Central","20-24 yrs",155,20,24
+"870",109,2020,"Matale","Central","25-49 yrs",558,25,49
+"871",109,2020,"Matale","Central","50-64 yrs",148,50,64
+"872",109,2020,"Matale","Central","65-99 yrs",80,65,99
+"873",110,2021,"Matale","Central","0-04 yrs",42,0,4
+"874",110,2021,"Matale","Central","05-09 yrs",15,5,9
+"875",110,2021,"Matale","Central","10-14 yrs",12,10,14
+"876",110,2021,"Matale","Central","15-19 yrs",40,15,19
+"877",110,2021,"Matale","Central","20-24 yrs",115,20,24
+"878",110,2021,"Matale","Central","25-49 yrs",372,25,49
+"879",110,2021,"Matale","Central","50-64 yrs",98,50,64
+"880",110,2021,"Matale","Central","65-99 yrs",32,65,99
+"881",111,2022,"Matale","Central","0-04 yrs",248,0,4
+"882",111,2022,"Matale","Central","05-09 yrs",378,5,9
+"883",111,2022,"Matale","Central","10-14 yrs",412,10,14
+"884",111,2022,"Matale","Central","15-19 yrs",368,15,19
+"885",111,2022,"Matale","Central","20-24 yrs",355,20,24
+"886",111,2022,"Matale","Central","25-49 yrs",1105,25,49
+"887",111,2022,"Matale","Central","50-64 yrs",270,50,64
+"888",111,2022,"Matale","Central","65-99 yrs",98,65,99
+"889",112,2023,"Matale","Central","0-04 yrs",205,0,4
+"890",112,2023,"Matale","Central","05-09 yrs",362,5,9
+"891",112,2023,"Matale","Central","10-14 yrs",478,10,14
+"892",112,2023,"Matale","Central","15-19 yrs",488,15,19
+"893",112,2023,"Matale","Central","20-24 yrs",518,20,24
+"894",112,2023,"Matale","Central","25-49 yrs",1595,25,49
+"895",112,2023,"Matale","Central","50-64 yrs",490,50,64
+"896",112,2023,"Matale","Central","65-99 yrs",180,65,99
+"897",113,2017,"Matara","Southern","0-04 yrs",468,0,4
+"898",113,2017,"Matara","Southern","05-09 yrs",698,5,9
+"899",113,2017,"Matara","Southern","10-14 yrs",1015,10,14
+"900",113,2017,"Matara","Southern","15-19 yrs",1488,15,19
+"901",113,2017,"Matara","Southern","20-24 yrs",2198,20,24
+"902",113,2017,"Matara","Southern","25-49 yrs",5805,25,49
+"903",113,2017,"Matara","Southern","50-64 yrs",1988,50,64
+"904",113,2017,"Matara","Southern","65-99 yrs",822,65,99
+"905",114,2018,"Matara","Southern","0-04 yrs",125,0,4
+"906",114,2018,"Matara","Southern","05-09 yrs",142,5,9
+"907",114,2018,"Matara","Southern","10-14 yrs",200,10,14
+"908",114,2018,"Matara","Southern","15-19 yrs",305,15,19
+"909",114,2018,"Matara","Southern","20-24 yrs",438,20,24
+"910",114,2018,"Matara","Southern","25-49 yrs",1162,25,49
+"911",114,2018,"Matara","Southern","50-64 yrs",372,50,64
+"912",114,2018,"Matara","Southern","65-99 yrs",135,65,99
+"913",115,2019,"Matara","Southern","0-04 yrs",318,0,4
+"914",115,2019,"Matara","Southern","05-09 yrs",645,5,9
+"915",115,2019,"Matara","Southern","10-14 yrs",728,10,14
+"916",115,2019,"Matara","Southern","15-19 yrs",1100,15,19
+"917",115,2019,"Matara","Southern","20-24 yrs",1368,20,24
+"918",115,2019,"Matara","Southern","25-49 yrs",3725,25,49
+"919",115,2019,"Matara","Southern","50-64 yrs",1170,50,64
+"920",115,2019,"Matara","Southern","65-99 yrs",478,65,99
+"921",116,2020,"Matara","Southern","0-04 yrs",60,0,4
+"922",116,2020,"Matara","Southern","05-09 yrs",55,5,9
+"923",116,2020,"Matara","Southern","10-14 yrs",78,10,14
+"924",116,2020,"Matara","Southern","15-19 yrs",115,15,19
+"925",116,2020,"Matara","Southern","20-24 yrs",200,20,24
+"926",116,2020,"Matara","Southern","25-49 yrs",592,25,49
+"927",116,2020,"Matara","Southern","50-64 yrs",202,50,64
+"928",116,2020,"Matara","Southern","65-99 yrs",108,65,99
+"929",117,2021,"Matara","Southern","0-04 yrs",75,0,4
+"930",117,2021,"Matara","Southern","05-09 yrs",110,5,9
+"931",117,2021,"Matara","Southern","10-14 yrs",125,10,14
+"932",117,2021,"Matara","Southern","15-19 yrs",202,15,19
+"933",117,2021,"Matara","Southern","20-24 yrs",252,20,24
+"934",117,2021,"Matara","Southern","25-49 yrs",828,25,49
+"935",117,2021,"Matara","Southern","50-64 yrs",210,50,64
+"936",117,2021,"Matara","Southern","65-99 yrs",92,65,99
+"937",118,2022,"Matara","Southern","0-04 yrs",125,0,4
+"938",118,2022,"Matara","Southern","05-09 yrs",262,5,9
+"939",118,2022,"Matara","Southern","10-14 yrs",345,10,14
+"940",118,2022,"Matara","Southern","15-19 yrs",388,15,19
+"941",118,2022,"Matara","Southern","20-24 yrs",528,20,24
+"942",118,2022,"Matara","Southern","25-49 yrs",1778,25,49
+"943",118,2022,"Matara","Southern","50-64 yrs",542,50,64
+"944",118,2022,"Matara","Southern","65-99 yrs",232,65,99
+"945",119,2023,"Matara","Southern","0-04 yrs",92,0,4
+"946",119,2023,"Matara","Southern","05-09 yrs",142,5,9
+"947",119,2023,"Matara","Southern","10-14 yrs",212,10,14
+"948",119,2023,"Matara","Southern","15-19 yrs",330,15,19
+"949",119,2023,"Matara","Southern","20-24 yrs",528,20,24
+"950",119,2023,"Matara","Southern","25-49 yrs",1655,25,49
+"951",119,2023,"Matara","Southern","50-64 yrs",678,50,64
+"952",119,2023,"Matara","Southern","65-99 yrs",355,65,99
+"953",120,2017,"Moneragala","Uva","0-04 yrs",10,0,4
+"954",120,2017,"Moneragala","Uva","05-09 yrs",40,5,9
+"955",120,2017,"Moneragala","Uva","10-14 yrs",52,10,14
+"956",120,2017,"Moneragala","Uva","15-19 yrs",145,15,19
+"957",120,2017,"Moneragala","Uva","20-24 yrs",240,20,24
+"958",120,2017,"Moneragala","Uva","25-49 yrs",722,25,49
+"959",120,2017,"Moneragala","Uva","50-64 yrs",235,50,64
+"960",120,2017,"Moneragala","Uva","65-99 yrs",90,65,99
+"961",121,2018,"Moneragala","Uva","0-04 yrs",12,0,4
+"962",121,2018,"Moneragala","Uva","05-09 yrs",2,5,9
+"963",121,2018,"Moneragala","Uva","10-14 yrs",15,10,14
+"964",121,2018,"Moneragala","Uva","15-19 yrs",22,15,19
+"965",121,2018,"Moneragala","Uva","20-24 yrs",62,20,24
+"966",121,2018,"Moneragala","Uva","25-49 yrs",202,25,49
+"967",121,2018,"Moneragala","Uva","50-64 yrs",65,50,64
+"968",121,2018,"Moneragala","Uva","65-99 yrs",15,65,99
+"969",122,2019,"Moneragala","Uva","0-04 yrs",32,0,4
+"970",122,2019,"Moneragala","Uva","05-09 yrs",40,5,9
+"971",122,2019,"Moneragala","Uva","10-14 yrs",40,10,14
+"972",122,2019,"Moneragala","Uva","15-19 yrs",145,15,19
+"973",122,2019,"Moneragala","Uva","20-24 yrs",255,20,24
+"974",122,2019,"Moneragala","Uva","25-49 yrs",758,25,49
+"975",122,2019,"Moneragala","Uva","50-64 yrs",265,50,64
+"976",122,2019,"Moneragala","Uva","65-99 yrs",88,65,99
+"977",123,2020,"Moneragala","Uva","0-04 yrs",25,0,4
+"978",123,2020,"Moneragala","Uva","05-09 yrs",20,5,9
+"979",123,2020,"Moneragala","Uva","10-14 yrs",30,10,14
+"980",123,2020,"Moneragala","Uva","15-19 yrs",62,15,19
+"981",123,2020,"Moneragala","Uva","20-24 yrs",65,20,24
+"982",123,2020,"Moneragala","Uva","25-49 yrs",435,25,49
+"983",123,2020,"Moneragala","Uva","50-64 yrs",162,50,64
+"984",123,2020,"Moneragala","Uva","65-99 yrs",72,65,99
+"985",124,2021,"Moneragala","Uva","0-04 yrs",8,0,4
+"986",124,2021,"Moneragala","Uva","05-09 yrs",8,5,9
+"987",124,2021,"Moneragala","Uva","10-14 yrs",15,10,14
+"988",124,2021,"Moneragala","Uva","15-19 yrs",20,15,19
+"989",124,2021,"Moneragala","Uva","20-24 yrs",60,20,24
+"990",124,2021,"Moneragala","Uva","25-49 yrs",285,25,49
+"991",124,2021,"Moneragala","Uva","50-64 yrs",85,50,64
+"992",124,2021,"Moneragala","Uva","65-99 yrs",28,65,99
+"993",125,2022,"Moneragala","Uva","0-04 yrs",32,0,4
+"994",125,2022,"Moneragala","Uva","05-09 yrs",30,5,9
+"995",125,2022,"Moneragala","Uva","10-14 yrs",32,10,14
+"996",125,2022,"Moneragala","Uva","15-19 yrs",110,15,19
+"997",125,2022,"Moneragala","Uva","20-24 yrs",182,20,24
+"998",125,2022,"Moneragala","Uva","25-49 yrs",632,25,49
+"999",125,2022,"Moneragala","Uva","50-64 yrs",182,50,64
+"1000",125,2022,"Moneragala","Uva","65-99 yrs",75,65,99
+"1001",126,2023,"Moneragala","Uva","0-04 yrs",12,0,4
+"1002",126,2023,"Moneragala","Uva","05-09 yrs",32,5,9
+"1003",126,2023,"Moneragala","Uva","10-14 yrs",55,10,14
+"1004",126,2023,"Moneragala","Uva","15-19 yrs",138,15,19
+"1005",126,2023,"Moneragala","Uva","20-24 yrs",268,20,24
+"1006",126,2023,"Moneragala","Uva","25-49 yrs",818,25,49
+"1007",126,2023,"Moneragala","Uva","50-64 yrs",295,50,64
+"1008",126,2023,"Moneragala","Uva","65-99 yrs",112,65,99
+"1009",127,2017,"Mullaitivu","Northen","0-04 yrs",12,0,4
+"1010",127,2017,"Mullaitivu","Northen","05-09 yrs",22,5,9
+"1011",127,2017,"Mullaitivu","Northen","10-14 yrs",5,10,14
+"1012",127,2017,"Mullaitivu","Northen","15-19 yrs",78,15,19
+"1013",127,2017,"Mullaitivu","Northen","20-24 yrs",158,20,24
+"1014",127,2017,"Mullaitivu","Northen","25-49 yrs",472,25,49
+"1015",127,2017,"Mullaitivu","Northen","50-64 yrs",98,50,64
+"1016",127,2017,"Mullaitivu","Northen","65-99 yrs",22,65,99
+"1017",128,2018,"Mullaitivu","Northen","0-04 yrs",5,0,4
+"1018",128,2018,"Mullaitivu","Northen","05-09 yrs",10,5,9
+"1019",128,2018,"Mullaitivu","Northen","10-14 yrs",2,10,14
+"1020",128,2018,"Mullaitivu","Northen","15-19 yrs",50,15,19
+"1021",128,2018,"Mullaitivu","Northen","20-24 yrs",78,20,24
+"1022",128,2018,"Mullaitivu","Northen","25-49 yrs",178,25,49
+"1023",128,2018,"Mullaitivu","Northen","50-64 yrs",20,50,64
+"1024",128,2018,"Mullaitivu","Northen","65-99 yrs",8,65,99
+"1025",129,2019,"Mullaitivu","Northen","0-04 yrs",12,0,4
+"1026",129,2019,"Mullaitivu","Northen","05-09 yrs",18,5,9
+"1027",129,2019,"Mullaitivu","Northen","10-14 yrs",8,10,14
+"1028",129,2019,"Mullaitivu","Northen","15-19 yrs",90,15,19
+"1029",129,2019,"Mullaitivu","Northen","20-24 yrs",152,20,24
+"1030",129,2019,"Mullaitivu","Northen","25-49 yrs",282,25,49
+"1031",129,2019,"Mullaitivu","Northen","50-64 yrs",55,50,64
+"1032",129,2019,"Mullaitivu","Northen","65-99 yrs",32,65,99
+"1033",130,2020,"Mullaitivu","Northen","0-04 yrs",12,0,4
+"1034",130,2020,"Mullaitivu","Northen","05-09 yrs",0,5,9
+"1035",130,2020,"Mullaitivu","Northen","10-14 yrs",10,10,14
+"1036",130,2020,"Mullaitivu","Northen","15-19 yrs",22,15,19
+"1037",130,2020,"Mullaitivu","Northen","20-24 yrs",35,20,24
+"1038",130,2020,"Mullaitivu","Northen","25-49 yrs",70,25,49
+"1039",130,2020,"Mullaitivu","Northen","50-64 yrs",20,50,64
+"1040",130,2020,"Mullaitivu","Northen","65-99 yrs",12,65,99
+"1041",131,2021,"Mullaitivu","Northen","0-04 yrs",0,0,4
+"1042",131,2021,"Mullaitivu","Northen","05-09 yrs",0,5,9
+"1043",131,2021,"Mullaitivu","Northen","10-14 yrs",0,10,14
+"1044",131,2021,"Mullaitivu","Northen","15-19 yrs",0,15,19
+"1045",131,2021,"Mullaitivu","Northen","20-24 yrs",2,20,24
+"1046",131,2021,"Mullaitivu","Northen","25-49 yrs",2,25,49
+"1047",131,2021,"Mullaitivu","Northen","50-64 yrs",0,50,64
+"1048",131,2021,"Mullaitivu","Northen","65-99 yrs",0,65,99
+"1049",132,2022,"Mullaitivu","Northen","0-04 yrs",5,0,4
+"1050",132,2022,"Mullaitivu","Northen","05-09 yrs",0,5,9
+"1051",132,2022,"Mullaitivu","Northen","10-14 yrs",2,10,14
+"1052",132,2022,"Mullaitivu","Northen","15-19 yrs",2,15,19
+"1053",132,2022,"Mullaitivu","Northen","20-24 yrs",20,20,24
+"1054",132,2022,"Mullaitivu","Northen","25-49 yrs",42,25,49
+"1055",132,2022,"Mullaitivu","Northen","50-64 yrs",10,50,64
+"1056",132,2022,"Mullaitivu","Northen","65-99 yrs",2,65,99
+"1057",133,2023,"Mullaitivu","Northen","0-04 yrs",2,0,4
+"1058",133,2023,"Mullaitivu","Northen","05-09 yrs",10,5,9
+"1059",133,2023,"Mullaitivu","Northen","10-14 yrs",10,10,14
+"1060",133,2023,"Mullaitivu","Northen","15-19 yrs",32,15,19
+"1061",133,2023,"Mullaitivu","Northen","20-24 yrs",58,20,24
+"1062",133,2023,"Mullaitivu","Northen","25-49 yrs",182,25,49
+"1063",133,2023,"Mullaitivu","Northen","50-64 yrs",55,50,64
+"1064",133,2023,"Mullaitivu","Northen","65-99 yrs",25,65,99
+"1065",134,2017,"Nuwara Eliya","Central","0-04 yrs",22,0,4
+"1066",134,2017,"Nuwara Eliya","Central","05-09 yrs",38,5,9
+"1067",134,2017,"Nuwara Eliya","Central","10-14 yrs",65,10,14
+"1068",134,2017,"Nuwara Eliya","Central","15-19 yrs",365,15,19
+"1069",134,2017,"Nuwara Eliya","Central","20-24 yrs",528,20,24
+"1070",134,2017,"Nuwara Eliya","Central","25-49 yrs",1212,25,49
+"1071",134,2017,"Nuwara Eliya","Central","50-64 yrs",305,50,64
+"1072",134,2017,"Nuwara Eliya","Central","65-99 yrs",120,65,99
+"1073",135,2018,"Nuwara Eliya","Central","0-04 yrs",15,0,4
+"1074",135,2018,"Nuwara Eliya","Central","05-09 yrs",10,5,9
+"1075",135,2018,"Nuwara Eliya","Central","10-14 yrs",20,10,14
+"1076",135,2018,"Nuwara Eliya","Central","15-19 yrs",102,15,19
+"1077",135,2018,"Nuwara Eliya","Central","20-24 yrs",140,20,24
+"1078",135,2018,"Nuwara Eliya","Central","25-49 yrs",358,25,49
+"1079",135,2018,"Nuwara Eliya","Central","50-64 yrs",135,50,64
+"1080",135,2018,"Nuwara Eliya","Central","65-99 yrs",45,65,99
+"1081",136,2019,"Nuwara Eliya","Central","0-04 yrs",30,0,4
+"1082",136,2019,"Nuwara Eliya","Central","05-09 yrs",32,5,9
+"1083",136,2019,"Nuwara Eliya","Central","10-14 yrs",35,10,14
+"1084",136,2019,"Nuwara Eliya","Central","15-19 yrs",150,15,19
+"1085",136,2019,"Nuwara Eliya","Central","20-24 yrs",168,20,24
+"1086",136,2019,"Nuwara Eliya","Central","25-49 yrs",550,25,49
+"1087",136,2019,"Nuwara Eliya","Central","50-64 yrs",162,50,64
+"1088",136,2019,"Nuwara Eliya","Central","65-99 yrs",62,65,99
+"1089",137,2020,"Nuwara Eliya","Central","0-04 yrs",8,0,4
+"1090",137,2020,"Nuwara Eliya","Central","05-09 yrs",0,5,9
+"1091",137,2020,"Nuwara Eliya","Central","10-14 yrs",2,10,14
+"1092",137,2020,"Nuwara Eliya","Central","15-19 yrs",25,15,19
+"1093",137,2020,"Nuwara Eliya","Central","20-24 yrs",55,20,24
+"1094",137,2020,"Nuwara Eliya","Central","25-49 yrs",140,25,49
+"1095",137,2020,"Nuwara Eliya","Central","50-64 yrs",35,50,64
+"1096",137,2020,"Nuwara Eliya","Central","65-99 yrs",20,65,99
+"1097",138,2021,"Nuwara Eliya","Central","0-04 yrs",0,0,4
+"1098",138,2021,"Nuwara Eliya","Central","05-09 yrs",2,5,9
+"1099",138,2021,"Nuwara Eliya","Central","10-14 yrs",5,10,14
+"1100",138,2021,"Nuwara Eliya","Central","15-19 yrs",18,15,19
+"1101",138,2021,"Nuwara Eliya","Central","20-24 yrs",58,20,24
+"1102",138,2021,"Nuwara Eliya","Central","25-49 yrs",160,25,49
+"1103",138,2021,"Nuwara Eliya","Central","50-64 yrs",32,50,64
+"1104",138,2021,"Nuwara Eliya","Central","65-99 yrs",10,65,99
+"1105",139,2022,"Nuwara Eliya","Central","0-04 yrs",15,0,4
+"1106",139,2022,"Nuwara Eliya","Central","05-09 yrs",15,5,9
+"1107",139,2022,"Nuwara Eliya","Central","10-14 yrs",15,10,14
+"1108",139,2022,"Nuwara Eliya","Central","15-19 yrs",45,15,19
+"1109",139,2022,"Nuwara Eliya","Central","20-24 yrs",100,20,24
+"1110",139,2022,"Nuwara Eliya","Central","25-49 yrs",232,25,49
+"1111",139,2022,"Nuwara Eliya","Central","50-64 yrs",62,50,64
+"1112",139,2022,"Nuwara Eliya","Central","65-99 yrs",22,65,99
+"1113",140,2023,"Nuwara Eliya","Central","0-04 yrs",15,0,4
+"1114",140,2023,"Nuwara Eliya","Central","05-09 yrs",8,5,9
+"1115",140,2023,"Nuwara Eliya","Central","10-14 yrs",15,10,14
+"1116",140,2023,"Nuwara Eliya","Central","15-19 yrs",58,15,19
+"1117",140,2023,"Nuwara Eliya","Central","20-24 yrs",178,20,24
+"1118",140,2023,"Nuwara Eliya","Central","25-49 yrs",265,25,49
+"1119",140,2023,"Nuwara Eliya","Central","50-64 yrs",68,50,64
+"1120",140,2023,"Nuwara Eliya","Central","65-99 yrs",18,65,99
+"1121",141,2017,"Polonnaruwa","North_Central","0-04 yrs",0,0,4
+"1122",141,2017,"Polonnaruwa","North_Central","05-09 yrs",0,5,9
+"1123",141,2017,"Polonnaruwa","North_Central","10-14 yrs",22,10,14
+"1124",141,2017,"Polonnaruwa","North_Central","15-19 yrs",120,15,19
+"1125",141,2017,"Polonnaruwa","North_Central","20-24 yrs",190,20,24
+"1126",141,2017,"Polonnaruwa","North_Central","25-49 yrs",915,25,49
+"1127",141,2017,"Polonnaruwa","North_Central","50-64 yrs",245,50,64
+"1128",141,2017,"Polonnaruwa","North_Central","65-99 yrs",85,65,99
+"1129",142,2018,"Polonnaruwa","North_Central","0-04 yrs",5,0,4
+"1130",142,2018,"Polonnaruwa","North_Central","05-09 yrs",2,5,9
+"1131",142,2018,"Polonnaruwa","North_Central","10-14 yrs",10,10,14
+"1132",142,2018,"Polonnaruwa","North_Central","15-19 yrs",38,15,19
+"1133",142,2018,"Polonnaruwa","North_Central","20-24 yrs",48,20,24
+"1134",142,2018,"Polonnaruwa","North_Central","25-49 yrs",175,25,49
+"1135",142,2018,"Polonnaruwa","North_Central","50-64 yrs",42,50,64
+"1136",142,2018,"Polonnaruwa","North_Central","65-99 yrs",15,65,99
+"1137",143,2019,"Polonnaruwa","North_Central","0-04 yrs",5,0,4
+"1138",143,2019,"Polonnaruwa","North_Central","05-09 yrs",5,5,9
+"1139",143,2019,"Polonnaruwa","North_Central","10-14 yrs",15,10,14
+"1140",143,2019,"Polonnaruwa","North_Central","15-19 yrs",130,15,19
+"1141",143,2019,"Polonnaruwa","North_Central","20-24 yrs",288,20,24
+"1142",143,2019,"Polonnaruwa","North_Central","25-49 yrs",842,25,49
+"1143",143,2019,"Polonnaruwa","North_Central","50-64 yrs",158,50,64
+"1144",143,2019,"Polonnaruwa","North_Central","65-99 yrs",62,65,99
+"1145",144,2020,"Polonnaruwa","North_Central","0-04 yrs",10,0,4
+"1146",144,2020,"Polonnaruwa","North_Central","05-09 yrs",5,5,9
+"1147",144,2020,"Polonnaruwa","North_Central","10-14 yrs",8,10,14
+"1148",144,2020,"Polonnaruwa","North_Central","15-19 yrs",32,15,19
+"1149",144,2020,"Polonnaruwa","North_Central","20-24 yrs",80,20,24
+"1150",144,2020,"Polonnaruwa","North_Central","25-49 yrs",192,25,49
+"1151",144,2020,"Polonnaruwa","North_Central","50-64 yrs",80,50,64
+"1152",144,2020,"Polonnaruwa","North_Central","65-99 yrs",32,65,99
+"1153",145,2021,"Polonnaruwa","North_Central","0-04 yrs",2,0,4
+"1154",145,2021,"Polonnaruwa","North_Central","05-09 yrs",0,5,9
+"1155",145,2021,"Polonnaruwa","North_Central","10-14 yrs",0,10,14
+"1156",145,2021,"Polonnaruwa","North_Central","15-19 yrs",15,15,19
+"1157",145,2021,"Polonnaruwa","North_Central","20-24 yrs",52,20,24
+"1158",145,2021,"Polonnaruwa","North_Central","25-49 yrs",210,25,49
+"1159",145,2021,"Polonnaruwa","North_Central","50-64 yrs",22,50,64
+"1160",145,2021,"Polonnaruwa","North_Central","65-99 yrs",12,65,99
+"1161",146,2022,"Polonnaruwa","North_Central","0-04 yrs",8,0,4
+"1162",146,2022,"Polonnaruwa","North_Central","05-09 yrs",10,5,9
+"1163",146,2022,"Polonnaruwa","North_Central","10-14 yrs",8,10,14
+"1164",146,2022,"Polonnaruwa","North_Central","15-19 yrs",50,15,19
+"1165",146,2022,"Polonnaruwa","North_Central","20-24 yrs",175,20,24
+"1166",146,2022,"Polonnaruwa","North_Central","25-49 yrs",455,25,49
+"1167",146,2022,"Polonnaruwa","North_Central","50-64 yrs",108,50,64
+"1168",146,2022,"Polonnaruwa","North_Central","65-99 yrs",52,65,99
+"1169",147,2023,"Polonnaruwa","North_Central","0-04 yrs",20,0,4
+"1170",147,2023,"Polonnaruwa","North_Central","05-09 yrs",5,5,9
+"1171",147,2023,"Polonnaruwa","North_Central","10-14 yrs",18,10,14
+"1172",147,2023,"Polonnaruwa","North_Central","15-19 yrs",130,15,19
+"1173",147,2023,"Polonnaruwa","North_Central","20-24 yrs",280,20,24
+"1174",147,2023,"Polonnaruwa","North_Central","25-49 yrs",785,25,49
+"1175",147,2023,"Polonnaruwa","North_Central","50-64 yrs",228,50,64
+"1176",147,2023,"Polonnaruwa","North_Central","65-99 yrs",102,65,99
+"1177",148,2017,"Puttalam","North_Western","0-04 yrs",948,0,4
+"1178",148,2017,"Puttalam","North_Western","05-09 yrs",1558,5,9
+"1179",148,2017,"Puttalam","North_Western","10-14 yrs",1508,10,14
+"1180",148,2017,"Puttalam","North_Western","15-19 yrs",1672,15,19
+"1181",148,2017,"Puttalam","North_Western","20-24 yrs",1425,20,24
+"1182",148,2017,"Puttalam","North_Western","25-49 yrs",4762,25,49
+"1183",148,2017,"Puttalam","North_Western","50-64 yrs",1555,50,64
+"1184",148,2017,"Puttalam","North_Western","65-99 yrs",580,65,99
+"1185",149,2018,"Puttalam","North_Western","0-04 yrs",850,0,4
+"1186",149,2018,"Puttalam","North_Western","05-09 yrs",1042,5,9
+"1187",149,2018,"Puttalam","North_Western","10-14 yrs",475,10,14
+"1188",149,2018,"Puttalam","North_Western","15-19 yrs",335,15,19
+"1189",149,2018,"Puttalam","North_Western","20-24 yrs",460,20,24
+"1190",149,2018,"Puttalam","North_Western","25-49 yrs",1145,25,49
+"1191",149,2018,"Puttalam","North_Western","50-64 yrs",355,50,64
+"1192",149,2018,"Puttalam","North_Western","65-99 yrs",100,65,99
+"1193",150,2019,"Puttalam","North_Western","0-04 yrs",505,0,4
+"1194",150,2019,"Puttalam","North_Western","05-09 yrs",680,5,9
+"1195",150,2019,"Puttalam","North_Western","10-14 yrs",622,10,14
+"1196",150,2019,"Puttalam","North_Western","15-19 yrs",798,15,19
+"1197",150,2019,"Puttalam","North_Western","20-24 yrs",908,20,24
+"1198",150,2019,"Puttalam","North_Western","25-49 yrs",2635,25,49
+"1199",150,2019,"Puttalam","North_Western","50-64 yrs",855,50,64
+"1200",150,2019,"Puttalam","North_Western","65-99 yrs",262,65,99
+"1201",151,2020,"Puttalam","North_Western","0-04 yrs",118,0,4
+"1202",151,2020,"Puttalam","North_Western","05-09 yrs",105,5,9
+"1203",151,2020,"Puttalam","North_Western","10-14 yrs",118,10,14
+"1204",151,2020,"Puttalam","North_Western","15-19 yrs",152,15,19
+"1205",151,2020,"Puttalam","North_Western","20-24 yrs",135,20,24
+"1206",151,2020,"Puttalam","North_Western","25-49 yrs",480,25,49
+"1207",151,2020,"Puttalam","North_Western","50-64 yrs",212,50,64
+"1208",151,2020,"Puttalam","North_Western","65-99 yrs",98,65,99
+"1209",152,2021,"Puttalam","North_Western","0-04 yrs",85,0,4
+"1210",152,2021,"Puttalam","North_Western","05-09 yrs",132,5,9
+"1211",152,2021,"Puttalam","North_Western","10-14 yrs",120,10,14
+"1212",152,2021,"Puttalam","North_Western","15-19 yrs",190,15,19
+"1213",152,2021,"Puttalam","North_Western","20-24 yrs",265,20,24
+"1214",152,2021,"Puttalam","North_Western","25-49 yrs",822,25,49
+"1215",152,2021,"Puttalam","North_Western","50-64 yrs",268,50,64
+"1216",152,2021,"Puttalam","North_Western","65-99 yrs",102,65,99
+"1217",153,2022,"Puttalam","North_Western","0-04 yrs",428,0,4
+"1218",153,2022,"Puttalam","North_Western","05-09 yrs",608,5,9
+"1219",153,2022,"Puttalam","North_Western","10-14 yrs",892,10,14
+"1220",153,2022,"Puttalam","North_Western","15-19 yrs",1212,15,19
+"1221",153,2022,"Puttalam","North_Western","20-24 yrs",1190,20,24
+"1222",153,2022,"Puttalam","North_Western","25-49 yrs",3978,25,49
+"1223",153,2022,"Puttalam","North_Western","50-64 yrs",1398,50,64
+"1224",153,2022,"Puttalam","North_Western","65-99 yrs",585,65,99
+"1225",154,2023,"Puttalam","North_Western","0-04 yrs",435,0,4
+"1226",154,2023,"Puttalam","North_Western","05-09 yrs",588,5,9
+"1227",154,2023,"Puttalam","North_Western","10-14 yrs",775,10,14
+"1228",154,2023,"Puttalam","North_Western","15-19 yrs",1332,15,19
+"1229",154,2023,"Puttalam","North_Western","20-24 yrs",1228,20,24
+"1230",154,2023,"Puttalam","North_Western","25-49 yrs",3890,25,49
+"1231",154,2023,"Puttalam","North_Western","50-64 yrs",1490,50,64
+"1232",154,2023,"Puttalam","North_Western","65-99 yrs",578,65,99
+"1233",155,2017,"Ratnapura","Sabaragamuwa","0-04 yrs",425,0,4
+"1234",155,2017,"Ratnapura","Sabaragamuwa","05-09 yrs",702,5,9
+"1235",155,2017,"Ratnapura","Sabaragamuwa","10-14 yrs",1312,10,14
+"1236",155,2017,"Ratnapura","Sabaragamuwa","15-19 yrs",2040,15,19
+"1237",155,2017,"Ratnapura","Sabaragamuwa","20-24 yrs",3188,20,24
+"1238",155,2017,"Ratnapura","Sabaragamuwa","25-49 yrs",10725,25,49
+"1239",155,2017,"Ratnapura","Sabaragamuwa","50-64 yrs",3530,50,64
+"1240",155,2017,"Ratnapura","Sabaragamuwa","65-99 yrs",1515,65,99
+"1241",156,2018,"Ratnapura","Sabaragamuwa","0-04 yrs",65,0,4
+"1242",156,2018,"Ratnapura","Sabaragamuwa","05-09 yrs",175,5,9
+"1243",156,2018,"Ratnapura","Sabaragamuwa","10-14 yrs",165,10,14
+"1244",156,2018,"Ratnapura","Sabaragamuwa","15-19 yrs",410,15,19
+"1245",156,2018,"Ratnapura","Sabaragamuwa","20-24 yrs",752,20,24
+"1246",156,2018,"Ratnapura","Sabaragamuwa","25-49 yrs",2342,25,49
+"1247",156,2018,"Ratnapura","Sabaragamuwa","50-64 yrs",778,50,64
+"1248",156,2018,"Ratnapura","Sabaragamuwa","65-99 yrs",378,65,99
+"1249",157,2019,"Ratnapura","Sabaragamuwa","0-04 yrs",222,0,4
+"1250",157,2019,"Ratnapura","Sabaragamuwa","05-09 yrs",310,5,9
+"1251",157,2019,"Ratnapura","Sabaragamuwa","10-14 yrs",410,10,14
+"1252",157,2019,"Ratnapura","Sabaragamuwa","15-19 yrs",990,15,19
+"1253",157,2019,"Ratnapura","Sabaragamuwa","20-24 yrs",1515,20,24
+"1254",157,2019,"Ratnapura","Sabaragamuwa","25-49 yrs",4608,25,49
+"1255",157,2019,"Ratnapura","Sabaragamuwa","50-64 yrs",1628,50,64
+"1256",157,2019,"Ratnapura","Sabaragamuwa","65-99 yrs",730,65,99
+"1257",158,2020,"Ratnapura","Sabaragamuwa","0-04 yrs",98,0,4
+"1258",158,2020,"Ratnapura","Sabaragamuwa","05-09 yrs",120,5,9
+"1259",158,2020,"Ratnapura","Sabaragamuwa","10-14 yrs",210,10,14
+"1260",158,2020,"Ratnapura","Sabaragamuwa","15-19 yrs",435,15,19
+"1261",158,2020,"Ratnapura","Sabaragamuwa","20-24 yrs",468,20,24
+"1262",158,2020,"Ratnapura","Sabaragamuwa","25-49 yrs",2135,25,49
+"1263",158,2020,"Ratnapura","Sabaragamuwa","50-64 yrs",1040,50,64
+"1264",158,2020,"Ratnapura","Sabaragamuwa","65-99 yrs",405,65,99
+"1265",159,2021,"Ratnapura","Sabaragamuwa","0-04 yrs",72,0,4
+"1266",159,2021,"Ratnapura","Sabaragamuwa","05-09 yrs",32,5,9
+"1267",159,2021,"Ratnapura","Sabaragamuwa","10-14 yrs",72,10,14
+"1268",159,2021,"Ratnapura","Sabaragamuwa","15-19 yrs",175,15,19
+"1269",159,2021,"Ratnapura","Sabaragamuwa","20-24 yrs",325,20,24
+"1270",159,2021,"Ratnapura","Sabaragamuwa","25-49 yrs",1215,25,49
+"1271",159,2021,"Ratnapura","Sabaragamuwa","50-64 yrs",345,50,64
+"1272",159,2021,"Ratnapura","Sabaragamuwa","65-99 yrs",142,65,99
+"1273",160,2022,"Ratnapura","Sabaragamuwa","0-04 yrs",108,0,4
+"1274",160,2022,"Ratnapura","Sabaragamuwa","05-09 yrs",160,5,9
+"1275",160,2022,"Ratnapura","Sabaragamuwa","10-14 yrs",335,10,14
+"1276",160,2022,"Ratnapura","Sabaragamuwa","15-19 yrs",918,15,19
+"1277",160,2022,"Ratnapura","Sabaragamuwa","20-24 yrs",1315,20,24
+"1278",160,2022,"Ratnapura","Sabaragamuwa","25-49 yrs",4058,25,49
+"1279",160,2022,"Ratnapura","Sabaragamuwa","50-64 yrs",1272,50,64
+"1280",160,2022,"Ratnapura","Sabaragamuwa","65-99 yrs",642,65,99
+"1281",161,2023,"Ratnapura","Sabaragamuwa","0-04 yrs",150,0,4
+"1282",161,2023,"Ratnapura","Sabaragamuwa","05-09 yrs",198,5,9
+"1283",161,2023,"Ratnapura","Sabaragamuwa","10-14 yrs",252,10,14
+"1284",161,2023,"Ratnapura","Sabaragamuwa","15-19 yrs",722,15,19
+"1285",161,2023,"Ratnapura","Sabaragamuwa","20-24 yrs",1078,20,24
+"1286",161,2023,"Ratnapura","Sabaragamuwa","25-49 yrs",3710,25,49
+"1287",161,2023,"Ratnapura","Sabaragamuwa","50-64 yrs",1458,50,64
+"1288",161,2023,"Ratnapura","Sabaragamuwa","65-99 yrs",705,65,99
+"1289",162,2017,"Trincomalee","Eastern","0-04 yrs",550,0,4
+"1290",162,2017,"Trincomalee","Eastern","05-09 yrs",835,5,9
+"1291",162,2017,"Trincomalee","Eastern","10-14 yrs",852,10,14
+"1292",162,2017,"Trincomalee","Eastern","15-19 yrs",915,15,19
+"1293",162,2017,"Trincomalee","Eastern","20-24 yrs",878,20,24
+"1294",162,2017,"Trincomalee","Eastern","25-49 yrs",2398,25,49
+"1295",162,2017,"Trincomalee","Eastern","50-64 yrs",518,50,64
+"1296",162,2017,"Trincomalee","Eastern","65-99 yrs",128,65,99
+"1297",163,2018,"Trincomalee","Eastern","0-04 yrs",282,0,4
+"1298",163,2018,"Trincomalee","Eastern","05-09 yrs",288,5,9
+"1299",163,2018,"Trincomalee","Eastern","10-14 yrs",258,10,14
+"1300",163,2018,"Trincomalee","Eastern","15-19 yrs",362,15,19
+"1301",163,2018,"Trincomalee","Eastern","20-24 yrs",398,20,24
+"1302",163,2018,"Trincomalee","Eastern","25-49 yrs",1072,25,49
+"1303",163,2018,"Trincomalee","Eastern","50-64 yrs",260,50,64
+"1304",163,2018,"Trincomalee","Eastern","65-99 yrs",72,65,99
+"1305",164,2019,"Trincomalee","Eastern","0-04 yrs",408,0,4
+"1306",164,2019,"Trincomalee","Eastern","05-09 yrs",670,5,9
+"1307",164,2019,"Trincomalee","Eastern","10-14 yrs",752,10,14
+"1308",164,2019,"Trincomalee","Eastern","15-19 yrs",788,15,19
+"1309",164,2019,"Trincomalee","Eastern","20-24 yrs",760,20,24
+"1310",164,2019,"Trincomalee","Eastern","25-49 yrs",2198,25,49
+"1311",164,2019,"Trincomalee","Eastern","50-64 yrs",462,50,64
+"1312",164,2019,"Trincomalee","Eastern","65-99 yrs",132,65,99
+"1313",165,2020,"Trincomalee","Eastern","0-04 yrs",410,0,4
+"1314",165,2020,"Trincomalee","Eastern","05-09 yrs",610,5,9
+"1315",165,2020,"Trincomalee","Eastern","10-14 yrs",765,10,14
+"1316",165,2020,"Trincomalee","Eastern","15-19 yrs",768,15,19
+"1317",165,2020,"Trincomalee","Eastern","20-24 yrs",582,20,24
+"1318",165,2020,"Trincomalee","Eastern","25-49 yrs",1898,25,49
+"1319",165,2020,"Trincomalee","Eastern","50-64 yrs",522,50,64
+"1320",165,2020,"Trincomalee","Eastern","65-99 yrs",142,65,99
+"1321",166,2021,"Trincomalee","Eastern","0-04 yrs",45,0,4
+"1322",166,2021,"Trincomalee","Eastern","05-09 yrs",42,5,9
+"1323",166,2021,"Trincomalee","Eastern","10-14 yrs",58,10,14
+"1324",166,2021,"Trincomalee","Eastern","15-19 yrs",100,15,19
+"1325",166,2021,"Trincomalee","Eastern","20-24 yrs",128,20,24
+"1326",166,2021,"Trincomalee","Eastern","25-49 yrs",330,25,49
+"1327",166,2021,"Trincomalee","Eastern","50-64 yrs",68,50,64
+"1328",166,2021,"Trincomalee","Eastern","65-99 yrs",20,65,99
+"1329",167,2022,"Trincomalee","Eastern","0-04 yrs",135,0,4
+"1330",167,2022,"Trincomalee","Eastern","05-09 yrs",162,5,9
+"1331",167,2022,"Trincomalee","Eastern","10-14 yrs",230,10,14
+"1332",167,2022,"Trincomalee","Eastern","15-19 yrs",360,15,19
+"1333",167,2022,"Trincomalee","Eastern","20-24 yrs",412,20,24
+"1334",167,2022,"Trincomalee","Eastern","25-49 yrs",1315,25,49
+"1335",167,2022,"Trincomalee","Eastern","50-64 yrs",242,50,64
+"1336",167,2022,"Trincomalee","Eastern","65-99 yrs",80,65,99
+"1337",168,2023,"Trincomalee","Eastern","0-04 yrs",415,0,4
+"1338",168,2023,"Trincomalee","Eastern","05-09 yrs",552,5,9
+"1339",168,2023,"Trincomalee","Eastern","10-14 yrs",628,10,14
+"1340",168,2023,"Trincomalee","Eastern","15-19 yrs",628,15,19
+"1341",168,2023,"Trincomalee","Eastern","20-24 yrs",658,20,24
+"1342",168,2023,"Trincomalee","Eastern","25-49 yrs",1725,25,49
+"1343",168,2023,"Trincomalee","Eastern","50-64 yrs",465,50,64
+"1344",168,2023,"Trincomalee","Eastern","65-99 yrs",192,65,99
+"1345",169,2017,"Vavuniya","Northen","0-04 yrs",8,0,4
+"1346",169,2017,"Vavuniya","Northen","05-09 yrs",28,5,9
+"1347",169,2017,"Vavuniya","Northen","10-14 yrs",20,10,14
+"1348",169,2017,"Vavuniya","Northen","15-19 yrs",252,15,19
+"1349",169,2017,"Vavuniya","Northen","20-24 yrs",515,20,24
+"1350",169,2017,"Vavuniya","Northen","25-49 yrs",942,25,49
+"1351",169,2017,"Vavuniya","Northen","50-64 yrs",215,50,64
+"1352",169,2017,"Vavuniya","Northen","65-99 yrs",102,65,99
+"1353",170,2018,"Vavuniya","Northen","0-04 yrs",10,0,4
+"1354",170,2018,"Vavuniya","Northen","05-09 yrs",50,5,9
+"1355",170,2018,"Vavuniya","Northen","10-14 yrs",55,10,14
+"1356",170,2018,"Vavuniya","Northen","15-19 yrs",145,15,19
+"1357",170,2018,"Vavuniya","Northen","20-24 yrs",238,20,24
+"1358",170,2018,"Vavuniya","Northen","25-49 yrs",508,25,49
+"1359",170,2018,"Vavuniya","Northen","50-64 yrs",120,50,64
+"1360",170,2018,"Vavuniya","Northen","65-99 yrs",42,65,99
+"1361",171,2019,"Vavuniya","Northen","0-04 yrs",12,0,4
+"1362",171,2019,"Vavuniya","Northen","05-09 yrs",28,5,9
+"1363",171,2019,"Vavuniya","Northen","10-14 yrs",30,10,14
+"1364",171,2019,"Vavuniya","Northen","15-19 yrs",120,15,19
+"1365",171,2019,"Vavuniya","Northen","20-24 yrs",172,20,24
+"1366",171,2019,"Vavuniya","Northen","25-49 yrs",450,25,49
+"1367",171,2019,"Vavuniya","Northen","50-64 yrs",110,50,64
+"1368",171,2019,"Vavuniya","Northen","65-99 yrs",40,65,99
+"1369",172,2020,"Vavuniya","Northen","0-04 yrs",18,0,4
+"1370",172,2020,"Vavuniya","Northen","05-09 yrs",22,5,9
+"1371",172,2020,"Vavuniya","Northen","10-14 yrs",65,10,14
+"1372",172,2020,"Vavuniya","Northen","15-19 yrs",88,15,19
+"1373",172,2020,"Vavuniya","Northen","20-24 yrs",128,20,24
+"1374",172,2020,"Vavuniya","Northen","25-49 yrs",268,25,49
+"1375",172,2020,"Vavuniya","Northen","50-64 yrs",98,50,64
+"1376",172,2020,"Vavuniya","Northen","65-99 yrs",32,65,99
+"1377",173,2021,"Vavuniya","Northen","0-04 yrs",0,0,4
+"1378",173,2021,"Vavuniya","Northen","05-09 yrs",5,5,9
+"1379",173,2021,"Vavuniya","Northen","10-14 yrs",0,10,14
+"1380",173,2021,"Vavuniya","Northen","15-19 yrs",8,15,19
+"1381",173,2021,"Vavuniya","Northen","20-24 yrs",25,20,24
+"1382",173,2021,"Vavuniya","Northen","25-49 yrs",88,25,49
+"1383",173,2021,"Vavuniya","Northen","50-64 yrs",12,50,64
+"1384",173,2021,"Vavuniya","Northen","65-99 yrs",0,65,99
+"1385",174,2022,"Vavuniya","Northen","0-04 yrs",0,0,4
+"1386",174,2022,"Vavuniya","Northen","05-09 yrs",0,5,9
+"1387",174,2022,"Vavuniya","Northen","10-14 yrs",0,10,14
+"1388",174,2022,"Vavuniya","Northen","15-19 yrs",18,15,19
+"1389",174,2022,"Vavuniya","Northen","20-24 yrs",55,20,24
+"1390",174,2022,"Vavuniya","Northen","25-49 yrs",135,25,49
+"1391",174,2022,"Vavuniya","Northen","50-64 yrs",30,50,64
+"1392",174,2022,"Vavuniya","Northen","65-99 yrs",10,65,99
+"1393",175,2023,"Vavuniya","Northen","0-04 yrs",2,0,4
+"1394",175,2023,"Vavuniya","Northen","05-09 yrs",5,5,9
+"1395",175,2023,"Vavuniya","Northen","10-14 yrs",2,10,14
+"1396",175,2023,"Vavuniya","Northen","15-19 yrs",48,15,19
+"1397",175,2023,"Vavuniya","Northen","20-24 yrs",62,20,24
+"1398",175,2023,"Vavuniya","Northen","25-49 yrs",175,25,49
+"1399",175,2023,"Vavuniya","Northen","50-64 yrs",25,50,64
+"1400",175,2023,"Vavuniya","Northen","65-99 yrs",25,65,99
